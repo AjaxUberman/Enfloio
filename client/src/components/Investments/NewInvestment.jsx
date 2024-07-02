@@ -127,13 +127,6 @@ const NewInvestment = ({ setNewInvestment }) => {
               >
                 Bist
               </button>
-              <button
-                value={"us500"}
-                className="hover:bg-orange-400 hover:text-white px-4 py-2 rounded-b-xl"
-                onClick={assetHandler}
-              >
-                US500
-              </button>
             </div>
           )}
           <div>

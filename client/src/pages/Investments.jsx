@@ -1,12 +1,25 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { MdOutlineAttachMoney } from "react-icons/md";
 import NewInvestment from "../components/Investments/NewInvestment";
 import MainInvestment from "../components/Investments/MainInvestment";
 import { motion } from "framer-motion";
+import { UserContext } from "../context/UserContext";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Investments = () => {
   const [newInvestment, setNewInvestment] = useState(false);
+  const { user } = useContext(UserContext);
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    if (!user) {
+      setTimeout(() => {
+        navigate("/login");
+      }, 3000);
+    }
+  }, [user]);
+
+  console.log(user);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -19,7 +32,7 @@ const Investments = () => {
           Your Investments
         </h1>
         <button
-          className="bg-orange-400 px-4 py-1 rounded-xl text-white font-semibold flex gap-2 items-center hover:bg-orange-500 hover:scale-105 transition duration-100 ease-in"
+          className="bg-orange-400 px-4 py-1 shadow-md rounded-xl text-white font-semibold flex gap-2 items-center hover:bg-orange-500 hover:scale-105 transition duration-100 ease-in"
           onClick={() => setNewInvestment(!newInvestment)}
         >
           <MdOutlineAttachMoney className="text-xl" />

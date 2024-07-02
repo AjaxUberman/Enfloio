@@ -3,11 +3,12 @@ import SignIn from "../components/loginPage/SignIn";
 import bglogin2 from "../photos/bg-login-2.jpg";
 import Register from "../components/loginPage/Register";
 import { motion } from "framer-motion";
+import { ToastContainer, toast } from "react-toastify";
 
 const LoginPage = () => {
   const [activeMenu, setActiveMenu] = useState("login");
 
- 
+  
   return (
     <motion.div
       initial={{ opacity: 0, scale: 1 }}

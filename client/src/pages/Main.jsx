@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import PortfolioBalance from "../components/Main/PortfolioBalance";
 import PortfolioGraph from "../components/Main/PortfolioGraph";
 import { motion } from "framer-motion";
 import Investments from "../components/Main/Investments";
+import { UserContext } from "../context/UserContext";
+import { redirect } from "react-router-dom";
 
 const Main = () => {
   const [mainDatas, setMainDatas] = useState();
+  const { user } = useContext(UserContext);
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 1 }}

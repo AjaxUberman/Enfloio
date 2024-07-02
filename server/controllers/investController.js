@@ -14,6 +14,7 @@ const coinListGetter = (req, res) => {
 
 const investmentSaver = (req, res) => {
   const { token } = req.cookies;
+
   const userid = req.params.id;
   const data = req.body;
   jwt.verify(token, jwtSecret, {}, async (err, userData) => {
@@ -31,6 +32,7 @@ const investmentSaver = (req, res) => {
 
 const investmentGetter = (req, res) => {
   const { token } = req.cookies;
+
   const userid = req.params.id;
   jwt.verify(token, jwtSecret, {}, async (err, userData) => {
     if (err) throw err;
@@ -70,6 +72,7 @@ const coinGetter = async (req, res) => {
 
 const mainDataPost = (req, res) => {
   const { token } = req.cookies;
+
   const { currentTotal, startingTotal, bistTotal, cryptoTotal } = req.body;
   if (currentTotal) {
     jwt.verify(token, jwtSecret, {}, async (err, userData) => {
@@ -81,6 +84,7 @@ const mainDataPost = (req, res) => {
           existingData.startingTotal = startingTotal;
           existingData.bistTotal = bistTotal;
           existingData.cryptoTotal = cryptoTotal;
+          existingData.monthlyData = monthlyData;
           await existingData.save();
           res.json(existingData);
         } else {
@@ -92,7 +96,7 @@ const mainDataPost = (req, res) => {
             cryptoTotal,
             monthlyData: [],
           });
-          res.json(newData); // Respond with newly created data
+          res.json(newData);
         }
       } catch (error) {
         console.error("Error updating Main data:", error);

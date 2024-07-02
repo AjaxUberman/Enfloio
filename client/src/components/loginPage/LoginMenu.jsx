@@ -23,12 +23,13 @@ const LoginMenu = () => {
         >
           My Profile
         </Link>
-        <button
+        <Link
+          to="/login"
           className="border-t px-16 2xl:px-32 py-2 hover:bg-main-gray hover:text-white rounded-b-xl"
           onClick={logoutHandler}
         >
           Logout
-        </button>
+        </Link>
       </div>
     </div>
   );

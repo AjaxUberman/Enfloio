@@ -21,9 +21,10 @@ const MainInvestment = () => {
       } else if (loggedIn && user) {
         const userID = user.id;
         if (userID) {
-          await axios
-            .get(`/investments/${userID}`, { withCredentials: true })
-            .then((res) => setDatas(res.data));
+          const response = await axios.get(`/investments/${userID}`, {
+            withCredentials: true,
+          });
+          setDatas(response.data);
         }
       }
     };

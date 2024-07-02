@@ -52,6 +52,10 @@ const PortfolioGraph = ({ mainDatas }) => {
     }
   }, [mainDatas]);
 
+  if (!Array.isArray(mainDatas)) {
+    return <h1 className="text-4xl font-bold">Returning to login Page...</h1>;
+  }
+
   const backgroundColors = dataPoints.map((value) =>
     value > 0 ? "green" : "red"
   );
