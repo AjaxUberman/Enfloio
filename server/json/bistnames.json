@@ -1,0 +1,1268 @@
+{
+  "code": "0",
+  "data": [
+    { "id": 92765, "kod": "A1CAP", "ad": "A1 CAPITAL YATIRIM", "tip": "Hisse" },
+    { "id": 3966, "kod": "ACSEL", "ad": "ACIPAYAM SELULOZ", "tip": "Hisse" },
+    { "id": 9, "kod": "ADEL", "ad": "ADEL KALEMCILIK", "tip": "Hisse" },
+    { "id": 3025, "kod": "ADESE", "ad": "ADESE GAYRIMENKUL", "tip": "Hisse" },
+    { "id": 95251, "kod": "ADGYO", "ad": "ADRA GMYO", "tip": "Hisse" },
+    { "id": 12, "kod": "AEFES", "ad": "ANADOLU EFES", "tip": "Hisse" },
+    { "id": 16, "kod": "AFYON", "ad": "AFYON CIMENTO", "tip": "Hisse" },
+    {
+      "id": 75932,
+      "kod": "AGESA",
+      "ad": "AGESA HAYAT EMEKLILIK",
+      "tip": "Hisse"
+    },
+    {
+      "id": 613,
+      "kod": "AGHOL",
+      "ad": "ANADOLU GRUBU HOLDING",
+      "tip": "Hisse"
+    },
+    { "id": 98105, "kod": "AGROT", "ad": "AGROTECH TEKNOLOJI", "tip": "Hisse" },
+    { "id": 18, "kod": "AGYO", "ad": "ATAKULE GMYO", "tip": "Hisse" },
+    { "id": 87991, "kod": "AHGAZ", "ad": "AHLATCI DOGALGAZ", "tip": "Hisse" },
+    { "id": 20, "kod": "AKBNK", "ad": "AKBANK", "tip": "Hisse" },
+    { "id": 21, "kod": "AKCNS", "ad": "AKCANSA", "tip": "Hisse" },
+    { "id": 22, "kod": "AKENR", "ad": "AK ENERJI", "tip": "Hisse" },
+    { "id": 2617, "kod": "AKFGY", "ad": "AKFEN GMYO", "tip": "Hisse" },
+    { "id": 90239, "kod": "AKFYE", "ad": "AKFEN YEN. ENERJI", "tip": "Hisse" },
+    { "id": 24, "kod": "AKGRT", "ad": "AKSIGORTA", "tip": "Hisse" },
+    { "id": 1107, "kod": "AKMGY", "ad": "AKMERKEZ GMYO", "tip": "Hisse" },
+    { "id": 26, "kod": "AKSA", "ad": "AKSA", "tip": "Hisse" },
+    { "id": 2209, "kod": "AKSEN", "ad": "AKSA ENERJI", "tip": "Hisse" },
+    { "id": 5344, "kod": "AKSGY", "ad": "AKIS GMYO", "tip": "Hisse" },
+    { "id": 27, "kod": "AKSUE", "ad": "AKSU ENERJI", "tip": "Hisse" },
+    {
+      "id": 71025,
+      "kod": "AKYHO",
+      "ad": "AKDENIZ YATIRIM HOLDING",
+      "tip": "Hisse"
+    },
+    { "id": 29, "kod": "ALARK", "ad": "ALARKO HOLDING", "tip": "Hisse" },
+    { "id": 1558, "kod": "ALBRK", "ad": "ALBARAKA TURK", "tip": "Hisse" },
+    { "id": 30, "kod": "ALCAR", "ad": "ALARKO CARRIER", "tip": "Hisse" },
+    {
+      "id": 31,
+      "kod": "ALCTL",
+      "ad": "ALCATEL LUCENT TELETAS",
+      "tip": "Hisse"
+    },
+    { "id": 87314, "kod": "ALFAS", "ad": "ALFA SOLAR ENERJI", "tip": "Hisse" },
+    { "id": 32, "kod": "ALGYO", "ad": "ALARKO GMYO", "tip": "Hisse" },
+    { "id": 33, "kod": "ALKA", "ad": "ALKIM KAGIT", "tip": "Hisse" },
+    { "id": 34, "kod": "ALKIM", "ad": "ALKIM KIMYA", "tip": "Hisse" },
+    {
+      "id": 112714,
+      "kod": "ALKLC",
+      "ad": "ALTINKILIC GIDA VE SUT",
+      "tip": "Hisse"
+    },
+    {
+      "id": 71279,
+      "kod": "ALMAD",
+      "ad": "ALTINYAG MADENCILIK VE ENERJI",
+      "tip": "Hisse"
+    },
+    { "id": 109969, "kod": "ALTNY", "ad": "ALTINAY SAVUNMA", "tip": "Hisse" },
+    { "id": 103901, "kod": "ALVES", "ad": "ALVES KABLO", "tip": "Hisse" },
+    { "id": 2218, "kod": "ANELE", "ad": "ANEL ELEKTRIK", "tip": "Hisse" },
+    {
+      "id": 77230,
+      "kod": "ANGEN",
+      "ad": "ANATOLIA TANI VE BIYOTEKNOLOJI",
+      "tip": "Hisse"
+    },
+    { "id": 41, "kod": "ANHYT", "ad": "ANADOLU HAYAT EMEK.", "tip": "Hisse" },
+    { "id": 42, "kod": "ANSGR", "ad": "ANADOLU SIGORTA", "tip": "Hisse" },
+    { "id": 77513, "kod": "ARASE", "ad": "DOGU ARAS ENERJI", "tip": "Hisse" },
+    { "id": 44, "kod": "ARCLK", "ad": "ARCELIK", "tip": "Hisse" },
+    {
+      "id": 69510,
+      "kod": "ARDYZ",
+      "ad": "ARD BILISIM TEKNOLOJILERI",
+      "tip": "Hisse"
+    },
+    { "id": 45, "kod": "ARENA", "ad": "ARENA BILGISAYAR", "tip": "Hisse" },
+    { "id": 1356, "kod": "ARMDA", "ad": "INGRAM BILISIM", "tip": "Hisse" },
+    { "id": 47, "kod": "ARSAN", "ad": "ARSAN TEKSTIL", "tip": "Hisse" },
+    { "id": 103902, "kod": "ARTMS", "ad": "ARTEMIS HALI", "tip": "Hisse" },
+    { "id": 72858, "kod": "ARZUM", "ad": "ARZUM EV ALETLERI", "tip": "Hisse" },
+    { "id": 49, "kod": "ASELS", "ad": "ASELSAN", "tip": "Hisse" },
+    { "id": 94120, "kod": "ASGYO", "ad": "ASCE GMYO", "tip": "Hisse" },
+    { "id": 87997, "kod": "ASTOR", "ad": "ASTOR ENERJI", "tip": "Hisse" },
+    { "id": 51, "kod": "ASUZU", "ad": "ANADOLU ISUZU", "tip": "Hisse" },
+    { "id": 53, "kod": "ATAGY", "ad": "ATA GMYO", "tip": "Hisse" },
+    { "id": 93783, "kod": "ATAKP", "ad": "ATAKEY PATATES", "tip": "Hisse" },
+    { "id": 75178, "kod": "ATATP", "ad": "ATP YAZILIM", "tip": "Hisse" },
+    { "id": 54, "kod": "ATEKS", "ad": "AKIN TEKSTIL", "tip": "Hisse" },
+    { "id": 55, "kod": "ATLAS", "ad": "ATLAS YAT. ORT.", "tip": "Hisse" },
+    {
+      "id": 57,
+      "kod": "ATSYH",
+      "ad": "ATLANTIS YATIRIM HOLDING",
+      "tip": "Hisse"
+    },
+    { "id": 59, "kod": "AVGYO", "ad": "AVRASYA GMYO", "tip": "Hisse" },
+    {
+      "id": 4374,
+      "kod": "AVHOL",
+      "ad": "AVRUPA YATIRIM HOLDING",
+      "tip": "Hisse"
+    },
+    {
+      "id": 3084,
+      "kod": "AVOD",
+      "ad": "A.V.O.D GIDA VE TARIM",
+      "tip": "Hisse"
+    },
+    { "id": 99432, "kod": "AVPGY", "ad": "AVRUPAKENT GMYO", "tip": "Hisse" },
+    {
+      "id": 1541,
+      "kod": "AVTUR",
+      "ad": "AVRASYA PETROL VE TUR.",
+      "tip": "Hisse"
+    },
+    { "id": 60, "kod": "AYCES", "ad": "ALTINYUNUS CESME", "tip": "Hisse" },
+    { "id": 74411, "kod": "AYDEM", "ad": "AYDEM ENERJI", "tip": "Hisse" },
+    { "id": 61, "kod": "AYEN", "ad": "AYEN ENERJI", "tip": "Hisse" },
+    {
+      "id": 3979,
+      "kod": "AYES",
+      "ad": "AYES CELIK HASIR VE CIT",
+      "tip": "Hisse"
+    },
+    { "id": 62, "kod": "AYGAZ", "ad": "AYGAZ", "tip": "Hisse" },
+    { "id": 84540, "kod": "AZTEK", "ad": "AZTEK TEKNOLOJI", "tip": "Hisse" },
+    { "id": 64, "kod": "BAGFS", "ad": "BAGFAS", "tip": "Hisse" },
+    { "id": 65, "kod": "BAKAB", "ad": "BAK AMBALAJ", "tip": "Hisse" },
+    {
+      "id": 4046,
+      "kod": "BALAT",
+      "ad": "BALATACILAR BALATACILIK",
+      "tip": "Hisse"
+    },
+    { "id": 67, "kod": "BANVT", "ad": "BANVIT", "tip": "Hisse" },
+    { "id": 83909, "kod": "BARMA", "ad": "BAREM AMBALAJ", "tip": "Hisse" },
+    {
+      "id": 4030,
+      "kod": "BASCM",
+      "ad": "BASTAS BASKENT CIMENTO",
+      "tip": "Hisse"
+    },
+    {
+      "id": 75179,
+      "kod": "BASGZ",
+      "ad": "BASKENT DOGALGAZ GMYO",
+      "tip": "Hisse"
+    },
+    {
+      "id": 70519,
+      "kod": "BAYRK",
+      "ad": "BAYRAK TABAN SANAYI",
+      "tip": "Hisse"
+    },
+    { "id": 98654, "kod": "BEGYO", "ad": "BATI EGE GMYO", "tip": "Hisse" },
+    { "id": 4354, "kod": "BERA", "ad": "BERA HOLDING", "tip": "Hisse" },
+    { "id": 3735, "kod": "BEYAZ", "ad": "BEYAZ FILO", "tip": "Hisse" },
+    { "id": 73, "kod": "BFREN", "ad": "BOSCH FREN SISTEMLERI", "tip": "Hisse" },
+    { "id": 91825, "kod": "BIENY", "ad": "BIEN YAPI URUNLERI", "tip": "Hisse" },
+    {
+      "id": 91824,
+      "kod": "BIGCH",
+      "ad": "BUYUK SEFLER BIGCHEFS",
+      "tip": "Hisse"
+    },
+    { "id": 1140, "kod": "BIMAS", "ad": "BIM MAGAZALAR", "tip": "Hisse" },
+    {
+      "id": 98103,
+      "kod": "BINHO",
+      "ad": "1000 YATIRIMLAR HOL.",
+      "tip": "Hisse"
+    },
+    {
+      "id": 74410,
+      "kod": "BIOEN",
+      "ad": "BIOTREND CEVRE VE ENERJI",
+      "tip": "Hisse"
+    },
+    { "id": 2402, "kod": "BIZIM", "ad": "BIZIM MAGAZALARI", "tip": "Hisse" },
+    { "id": 76, "kod": "BJKAS", "ad": "BESIKTAS FUTBOL YAT.", "tip": "Hisse" },
+    { "id": 2622, "kod": "BLCYT", "ad": "BILICI YATIRIM", "tip": "Hisse" },
+    { "id": 9004, "kod": "BMELK", "ad": "PAMUKOVA ELEKTRIK", "tip": "Hisse" },
+    { "id": 74924, "kod": "BMSCH", "ad": "BMS CELIK HASIR", "tip": "Hisse" },
+    { "id": 81092, "kod": "BMSTL", "ad": "BMS BIRLESIK METAL", "tip": "Hisse" },
+    { "id": 9198, "kod": "BNTAS", "ad": "BANTAS AMBALAJ", "tip": "Hisse" },
+    {
+      "id": 75177,
+      "kod": "BOBET",
+      "ad": "BOGAZICI BETON SANAYI",
+      "tip": "Hisse"
+    },
+    { "id": 96433, "kod": "BORLS", "ad": "BORLEASE OTOMOTIV", "tip": "Hisse" },
+    { "id": 103035, "kod": "BORSK", "ad": "BOR SEKER", "tip": "Hisse" },
+    { "id": 78, "kod": "BOSSA", "ad": "BOSSA", "tip": "Hisse" },
+    { "id": 81, "kod": "BRISA", "ad": "BRISA", "tip": "Hisse" },
+    { "id": 1884, "kod": "BRKO", "ad": "BIRKO MENSUCAT", "tip": "Hisse" },
+    { "id": 2591, "kod": "BRKSN", "ad": "BERKOSAN YALITIM", "tip": "Hisse" },
+    {
+      "id": 87371,
+      "kod": "BRKVY",
+      "ad": "BIRIKIM VARLIK YONETIM",
+      "tip": "Hisse"
+    },
+    {
+      "id": 76198,
+      "kod": "BRLSM",
+      "ad": "BIRLESIM MUHENDISLIK",
+      "tip": "Hisse"
+    },
+    { "id": 83, "kod": "BRMEN", "ad": "BIRLIK MENSUCAT", "tip": "Hisse" },
+    { "id": 85, "kod": "BRSAN", "ad": "BORUSAN BORU SANAYI", "tip": "Hisse" },
+    { "id": 87, "kod": "BRYAT", "ad": "BORUSAN YAT. PAZ.", "tip": "Hisse" },
+    { "id": 88, "kod": "BSOKE", "ad": "BATISOKE CIMENTO", "tip": "Hisse" },
+    { "id": 90, "kod": "BTCIM", "ad": "BATI CIMENTO", "tip": "Hisse" },
+    { "id": 91, "kod": "BUCIM", "ad": "BURSA CIMENTO", "tip": "Hisse" },
+    { "id": 93, "kod": "BURCE", "ad": "BURCELIK", "tip": "Hisse" },
+    { "id": 884, "kod": "BURVA", "ad": "BURCELIK VANA", "tip": "Hisse" },
+    { "id": 89310, "kod": "BVSAN", "ad": "BULBULOGLU VINC", "tip": "Hisse" },
+    {
+      "id": 94180,
+      "kod": "BYDNR",
+      "ad": "BAYDONER RESTORANLARI",
+      "tip": "Hisse"
+    },
+    { "id": 74412, "kod": "CANTE", "ad": "CAN2 TERMIK", "tip": "Hisse" },
+    { "id": 98656, "kod": "CATES", "ad": "CATES ELEKTRIK", "tip": "Hisse" },
+    { "id": 1335, "kod": "CCOLA", "ad": "COCA COLA ICECEK", "tip": "Hisse" },
+    { "id": 98, "kod": "CELHA", "ad": "CELIK HALAT", "tip": "Hisse" },
+    { "id": 2224, "kod": "CEMAS", "ad": "CEMAS DOKUM", "tip": "Hisse" },
+    { "id": 99, "kod": "CEMTS", "ad": "CEMTAS", "tip": "Hisse" },
+    { "id": 64732, "kod": "CEOEM", "ad": "CEO EVENT MEDYA", "tip": "Hisse" },
+    { "id": 110, "kod": "CIMSA", "ad": "CIMSA", "tip": "Hisse" },
+    { "id": 112, "kod": "CLEBI", "ad": "CELEBI", "tip": "Hisse" },
+    { "id": 114, "kod": "CMBTN", "ad": "CIMBETON", "tip": "Hisse" },
+    { "id": 115, "kod": "CMENT", "ad": "CIMENTAS", "tip": "Hisse" },
+    { "id": 80863, "kod": "CONSE", "ad": "CONSUS ENERJI", "tip": "Hisse" },
+    { "id": 92, "kod": "COSMO", "ad": "COSMOS YAT. HOLDING", "tip": "Hisse" },
+    { "id": 537, "kod": "CRDFA", "ad": "CREDITWEST FAKTORING", "tip": "Hisse" },
+    { "id": 9222, "kod": "CRFSA", "ad": "CARREFOURSA", "tip": "Hisse" },
+    { "id": 9318, "kod": "CUSAN", "ad": "CUHADAROGLU METAL", "tip": "Hisse" },
+    { "id": 90616, "kod": "CVKMD", "ad": "CVK MADEN", "tip": "Hisse" },
+    { "id": 90940, "kod": "CWENE", "ad": "CW ENERJI", "tip": "Hisse" },
+    { "id": 515, "kod": "DAGHL", "ad": "DAGI YATIRIM HOLDING", "tip": "Hisse" },
+    { "id": 2658, "kod": "DAGI", "ad": "DAGI GIYIM", "tip": "Hisse" },
+    { "id": 79539, "kod": "DAPGM", "ad": "DAP GAYRIMENKUL", "tip": "Hisse" },
+    { "id": 129, "kod": "DARDL", "ad": "DARDANEL", "tip": "Hisse" },
+    { "id": 4039, "kod": "DENGE", "ad": "DENGE HOLDING", "tip": "Hisse" },
+    {
+      "id": 73970,
+      "kod": "DERHL",
+      "ad": "DERLUKS YATIRIM HOLDING",
+      "tip": "Hisse"
+    },
+    { "id": 137, "kod": "DERIM", "ad": "DERIMOD", "tip": "Hisse" },
+    { "id": 847, "kod": "DESA", "ad": "DESA DERI", "tip": "Hisse" },
+    { "id": 2342, "kod": "DESPC", "ad": "DESPEC BILGISAYAR", "tip": "Hisse" },
+    { "id": 138, "kod": "DEVA", "ad": "DEVA HOLDING", "tip": "Hisse" },
+    { "id": 1274, "kod": "DGATE", "ad": "DATAGATE BILGISAYAR", "tip": "Hisse" },
+    { "id": 234, "kod": "DGGYO", "ad": "DOGUS GMYO", "tip": "Hisse" },
+    { "id": 78911, "kod": "DGNMO", "ad": "DOGANLAR MOBILYA", "tip": "Hisse" },
+    {
+      "id": 4079,
+      "kod": "DIRIT",
+      "ad": "DIRITEKS DIRILIS TEKSTIL",
+      "tip": "Hisse"
+    },
+    { "id": 141, "kod": "DITAS", "ad": "DITAS DOGAN", "tip": "Hisse" },
+    {
+      "id": 55170,
+      "kod": "DJIST",
+      "ad": "QNB FINANSPORTFOY DJIST HSY BYF",
+      "tip": "Hisse"
+    },
+    { "id": 95582, "kod": "DMRGD", "ad": "DMR UNLU MAMULLER", "tip": "Hisse" },
+    { "id": 144, "kod": "DMSAS", "ad": "DEMISAS DOKUM", "tip": "Hisse" },
+    {
+      "id": 71278,
+      "kod": "DNISI",
+      "ad": "DINAMIK ISI MAKINA YALITIM",
+      "tip": "Hisse"
+    },
+    { "id": 905, "kod": "DOAS", "ad": "DOGUS OTOMOTIV", "tip": "Hisse" },
+    { "id": 146, "kod": "DOBUR", "ad": "DOGAN BURDA", "tip": "Hisse" },
+    { "id": 2340, "kod": "DOCO", "ad": "DO-CO", "tip": "Hisse" },
+    {
+      "id": 96432,
+      "kod": "DOFER",
+      "ad": "DOFER YAPI MALZEMELERI",
+      "tip": "Hisse"
+    },
+    { "id": 147, "kod": "DOGUB", "ad": "DOGUSAN", "tip": "Hisse" },
+    { "id": 148, "kod": "DOHOL", "ad": "DOGAN HOLDING", "tip": "Hisse" },
+    { "id": 56403, "kod": "DOKTA", "ad": "DOKTAS DOKUMCULUK", "tip": "Hisse" },
+    { "id": 150, "kod": "DURDO", "ad": "DURAN DOGAN BASIM", "tip": "Hisse" },
+    { "id": 153, "kod": "DYOBY", "ad": "DYO BOYA", "tip": "Hisse" },
+    { "id": 145, "kod": "DZGYO", "ad": "DENIZ GMYO", "tip": "Hisse" },
+    { "id": 95182, "kod": "EBEBK", "ad": "EBEBEK MAGAZACILIK", "tip": "Hisse" },
+    { "id": 159, "kod": "ECILC", "ad": "ECZACIBASI ILAC", "tip": "Hisse" },
+    { "id": 161, "kod": "ECZYT", "ad": "ECZACIBASI YATIRIM", "tip": "Hisse" },
+    { "id": 75680, "kod": "EDATA", "ad": "E-DATA TEKNOLOJI", "tip": "Hisse" },
+    {
+      "id": 75353,
+      "kod": "EDATAHE",
+      "ad": "E-Data Teknoloji Pazarlama A.Ş.",
+      "tip": "Hisse"
+    },
+    { "id": 162, "kod": "EDIP", "ad": "EDIP GAYRIMENKUL", "tip": "Hisse" },
+    { "id": 113367, "kod": "EFORC", "ad": "EFOR ÇAY", "tip": "Hisse" },
+    {
+      "id": 55789,
+      "kod": "EGCEY",
+      "ad": "EGELI&CO ENERJI YATIRIM",
+      "tip": "Hisse"
+    },
+    {
+      "id": 576,
+      "kod": "EGCYH",
+      "ad": "EGELI&CO YATIRIM HOLDING",
+      "tip": "Hisse"
+    },
+    {
+      "id": 192,
+      "kod": "EGCYO",
+      "ad": "EGELI & CO TARIM GIRISIM",
+      "tip": "Hisse"
+    },
+    { "id": 164, "kod": "EGEEN", "ad": "EGE ENDUSTRI", "tip": "Hisse" },
+    { "id": 76383, "kod": "EGEPO", "ad": "NASMED EGEPOL", "tip": "Hisse" },
+    { "id": 165, "kod": "EGGUB", "ad": "EGE GUBRE", "tip": "Hisse" },
+    { "id": 166, "kod": "EGPRO", "ad": "EGE PROFIL", "tip": "Hisse" },
+    { "id": 168, "kod": "EGSER", "ad": "EGE SERAMIK", "tip": "Hisse" },
+    { "id": 2341, "kod": "EKGYO", "ad": "EMLAK KONUT GMYO", "tip": "Hisse" },
+    { "id": 2232, "kod": "EKIZ", "ad": "EKIZ KIMYA", "tip": "Hisse" },
+    { "id": 98104, "kod": "EKOS", "ad": "EKOS TEKNOLOJI", "tip": "Hisse" },
+    { "id": 90240, "kod": "EKSUN", "ad": "EKSUN GIDA", "tip": "Hisse" },
+    {
+      "id": 77521,
+      "kod": "ELITE",
+      "ad": "ELITE NATUREL ORGANIK GIDA",
+      "tip": "Hisse"
+    },
+    { "id": 171, "kod": "EMKEL", "ad": "EMEK ELEKTRIK", "tip": "Hisse" },
+    { "id": 172, "kod": "EMNIS", "ad": "EMINIS AMBALAJ", "tip": "Hisse" },
+    { "id": 94827, "kod": "ENERY", "ad": "ENERYA ENERJI", "tip": "Hisse" },
+    { "id": 2988, "kod": "ENJSA", "ad": "ENERJISA ENERJI", "tip": "Hisse" },
+    { "id": 175, "kod": "ENKAI", "ad": "ENKA INSAAT", "tip": "Hisse" },
+    { "id": 94179, "kod": "ENRYA", "ad": "ENERYA ENERJİ", "tip": "Hisse" },
+    { "id": 80191, "kod": "ENSRI", "ad": "ENSARI DERI", "tip": "Hisse" },
+    {
+      "id": 105675,
+      "kod": "ENTRA",
+      "ad": "IC ENTERRA YEN. ENERJI",
+      "tip": "Hisse"
+    },
+    { "id": 176, "kod": "EPLAS", "ad": "EGEPLAST", "tip": "Hisse" },
+    { "id": 177, "kod": "ERBOS", "ad": "ERBOSAN", "tip": "Hisse" },
+    { "id": 79122, "kod": "ERCB", "ad": "ERCIYAS CELIK BORU", "tip": "Hisse" },
+    { "id": 178, "kod": "EREGL", "ad": "EREGLI DEMIR CELIK", "tip": "Hisse" },
+    { "id": 179, "kod": "ERSU", "ad": "ERSU GIDA", "tip": "Hisse" },
+    { "id": 75681, "kod": "ESCAR", "ad": "ESCAR FILO", "tip": "Hisse" },
+    { "id": 180, "kod": "ESCOM", "ad": "ESCORT TEKNOLOJI", "tip": "Hisse" },
+    { "id": 71677, "kod": "ESEN", "ad": "ESENBOGA ELEKTRIK", "tip": "Hisse" },
+    { "id": 3980, "kod": "ETILR", "ad": "ETILER GIDA", "tip": "Hisse" },
+    {
+      "id": 1771,
+      "kod": "ETYAT",
+      "ad": "EURO TREND YAT. ORT.",
+      "tip": "Hisse"
+    },
+    {
+      "id": 2219,
+      "kod": "EUHOL",
+      "ad": "EURO YATIRIM HOLDING",
+      "tip": "Hisse"
+    },
+    {
+      "id": 2837,
+      "kod": "EUKYO",
+      "ad": "EURO KAPITAL YAT. ORT.",
+      "tip": "Hisse"
+    },
+    { "id": 90639, "kod": "EUPWR", "ad": "EUROPOWER ENERJI", "tip": "Hisse" },
+    { "id": 82311, "kod": "EUREN", "ad": "EUROPEN ENDUSTRI", "tip": "Hisse" },
+    { "id": 1361, "kod": "EUYO", "ad": "EURO YAT. ORT.", "tip": "Hisse" },
+    { "id": 87993, "kod": "EYGYO", "ad": "EYG GMYO", "tip": "Hisse" },
+    { "id": 71024, "kod": "FADE", "ad": "FADE GIDA", "tip": "Hisse" },
+    { "id": 714, "kod": "FENER", "ad": "FENERBAHCE FUTBOL", "tip": "Hisse" },
+    {
+      "id": 3942,
+      "kod": "FLAP",
+      "ad": "FLAP KONGRE TOPLANTI HIZ.",
+      "tip": "Hisse"
+    },
+    { "id": 201, "kod": "FMIZP", "ad": "F-M IZMIT PISTON", "tip": "Hisse" },
+    {
+      "id": 9551,
+      "kod": "FONET",
+      "ad": "FONET BILGI TEKNOLOJILERI",
+      "tip": "Hisse"
+    },
+    {
+      "id": 56870,
+      "kod": "FORMT",
+      "ad": "FORMET METAL VE CAM",
+      "tip": "Hisse"
+    },
+    {
+      "id": 92766,
+      "kod": "FORTE",
+      "ad": "FORTE BILGI ILETISIM",
+      "tip": "Hisse"
+    },
+    { "id": 205, "kod": "FRIGO", "ad": "FRIGO PAK GIDA", "tip": "Hisse" },
+    { "id": 206, "kod": "FROTO", "ad": "FORD OTOSAN", "tip": "Hisse" },
+    { "id": 93784, "kod": "FZLGY", "ad": "FUZUL GMYO", "tip": "Hisse" },
+    { "id": 209, "kod": "GARAN", "ad": "GARANTI BANKASI", "tip": "Hisse" },
+    { "id": 210, "kod": "GARFA", "ad": "GARANTI FAKTORING", "tip": "Hisse" },
+    { "id": 2235, "kod": "GEDIK", "ad": "GEDIK Y. MEN. DEG.", "tip": "Hisse" },
+    { "id": 8264, "kod": "GEDZA", "ad": "GEDIZ AMBALAJ", "tip": "Hisse" },
+    { "id": 75871, "kod": "GENIL", "ad": "GEN ILAC", "tip": "Hisse" },
+    { "id": 221, "kod": "GENTS", "ad": "GENTAS", "tip": "Hisse" },
+    { "id": 222, "kod": "GEREL", "ad": "GERSAN ELEKTRIK", "tip": "Hisse" },
+    {
+      "id": 75934,
+      "kod": "GESAN",
+      "ad": "GIRISIM ELEKTRIK SANAYI",
+      "tip": "Hisse"
+    },
+    {
+      "id": 95248,
+      "kod": "GIPTA",
+      "ad": "GIPTA OFIS KIRTASIYE",
+      "tip": "Hisse"
+    },
+    { "id": 2876, "kod": "GLBMD", "ad": "GLOBAL MEN. DEG.", "tip": "Hisse" },
+    {
+      "id": 77228,
+      "kod": "GLCVY",
+      "ad": "GELECEK VARLIK YONETIMI",
+      "tip": "Hisse"
+    },
+    {
+      "id": 55171,
+      "kod": "GLDTR",
+      "ad": "QNB FINANSPORTFOY ALTIN BYF",
+      "tip": "Hisse"
+    },
+    { "id": 1342, "kod": "GLRYH", "ad": "GULER YAT. HOLDING", "tip": "Hisse" },
+    { "id": 226, "kod": "GLYHO", "ad": "GLOBAL YAT. HOLDING", "tip": "Hisse" },
+    {
+      "id": 76197,
+      "kod": "GMSTR",
+      "ad": "QNB FINANSPORTFOY GUMUS BYF",
+      "tip": "Hisse"
+    },
+    {
+      "id": 3808,
+      "kod": "GMSTRF",
+      "ad": "FINANS PORTFOY GUMUS BYF",
+      "tip": "Hisse"
+    },
+    { "id": 78005, "kod": "GMTAS", "ad": "GIMAT MAGAZACILIK", "tip": "Hisse" },
+    { "id": 90176, "kod": "GOKNR", "ad": "GOKNUR GIDA", "tip": "Hisse" },
+    { "id": 230, "kod": "GOLTS", "ad": "GOLTAS CIMENTO", "tip": "Hisse" },
+    { "id": 231, "kod": "GOODY", "ad": "GOOD-YEAR", "tip": "Hisse" },
+    { "id": 2172, "kod": "GOZDE", "ad": "GOZDE GIRISIM", "tip": "Hisse" },
+    { "id": 235, "kod": "GRNYO", "ad": "GARANTI YAT. ORT.", "tip": "Hisse" },
+    {
+      "id": 80189,
+      "kod": "GRSEL",
+      "ad": "GUR-SEL TURIZM TASIMACILIK",
+      "tip": "Hisse"
+    },
+    { "id": 90939, "kod": "GRTRK", "ad": "GRAINTURK TARIM", "tip": "Hisse" },
+    { "id": 2918, "kod": "GSDDE", "ad": "GSD DENIZCILIK", "tip": "Hisse" },
+    { "id": 236, "kod": "GSDHO", "ad": "GSD HOLDING", "tip": "Hisse" },
+    { "id": 237, "kod": "GSRAY", "ad": "GALATASARAY SPORTIF", "tip": "Hisse" },
+    { "id": 238, "kod": "GUBRF", "ad": "GUBRE FABRIK.", "tip": "Hisse" },
+    { "id": 74406, "kod": "GWIND", "ad": "GALATA WIND ENERJI", "tip": "Hisse" },
+    { "id": 80190, "kod": "GZNMI", "ad": "GEZINOMI SEYAHAT", "tip": "Hisse" },
+    { "id": 1543, "kod": "HALKB", "ad": "T. HALK BANKASI", "tip": "Hisse" },
+    { "id": 2619, "kod": "HATEK", "ad": "HATAY TEKSTIL", "tip": "Hisse" },
+    { "id": 95250, "kod": "HATSN", "ad": "HATSAN GEMI", "tip": "Hisse" },
+    { "id": 9098, "kod": "HDFGS", "ad": "HEDEF GIRISIM", "tip": "Hisse" },
+    { "id": 77229, "kod": "HEDEF", "ad": "HEDEF HOLDING", "tip": "Hisse" },
+    { "id": 245, "kod": "HEKTS", "ad": "HEKTAS", "tip": "Hisse" },
+    {
+      "id": 84539,
+      "kod": "HKTM",
+      "ad": "HIDROPAR HAREKET KONTROL",
+      "tip": "Hisse"
+    },
+    { "id": 5797, "kod": "HLGYO", "ad": "HALK GMYO", "tip": "Hisse" },
+    { "id": 112712, "kod": "HOROZ", "ad": "HOROZ LOJISTIK", "tip": "Hisse" },
+    {
+      "id": 112182,
+      "kod": "HRKET",
+      "ad": "HAREKET PROJE TASIMACILIGI",
+      "tip": "Hisse"
+    },
+    { "id": 80033, "kod": "HTTBT", "ad": "HITIT BILGISAYAR", "tip": "Hisse" },
+    { "id": 57032, "kod": "HUBVC", "ad": "HUB GIRISIM", "tip": "Hisse" },
+    {
+      "id": 79540,
+      "kod": "HUNER",
+      "ad": "HUN YENILENEBILIR ENERJI",
+      "tip": "Hisse"
+    },
+    { "id": 252, "kod": "HURGZ", "ad": "HURRIYET GZT.", "tip": "Hisse" },
+    { "id": 525, "kod": "ICBCT", "ad": "ICBC TURKEY BANK", "tip": "Hisse" },
+    { "id": 93453, "kod": "ICUGS", "ad": "ICU GIRISIM", "tip": "Hisse" },
+    { "id": 2223, "kod": "IDGYO", "ad": "IDEALIST GMYO", "tip": "Hisse" },
+    {
+      "id": 355,
+      "kod": "IEYHO",
+      "ad": "ISIKLAR ENERJI YAPI HOL.",
+      "tip": "Hisse"
+    },
+    { "id": 77447, "kod": "IHAAS", "ad": "IHLAS HABER AJANSI", "tip": "Hisse" },
+    { "id": 258, "kod": "IHEVA", "ad": "IHLAS EV ALETLERI", "tip": "Hisse" },
+    { "id": 2216, "kod": "IHGZT", "ad": "IHLAS GAZETECILIK", "tip": "Hisse" },
+    { "id": 261, "kod": "IHLAS", "ad": "IHLAS HOLDING", "tip": "Hisse" },
+    { "id": 394, "kod": "IHLGM", "ad": "IHLAS GAYRIMENKUL", "tip": "Hisse" },
+    { "id": 2315, "kod": "IHYAY", "ad": "IHLAS YAYIN HOLDING", "tip": "Hisse" },
+    { "id": 81091, "kod": "IMASM", "ad": "IMAS MAKINA", "tip": "Hisse" },
+    { "id": 919, "kod": "INDES", "ad": "INDEKS BILGISAYAR", "tip": "Hisse" },
+    { "id": 2933, "kod": "INFO", "ad": "INFO YATIRIM", "tip": "Hisse" },
+    { "id": 92767, "kod": "INGRM", "ad": "INGRAM BILISIM", "tip": "Hisse" },
+    { "id": 267, "kod": "INTEM", "ad": "INTEMA", "tip": "Hisse" },
+    {
+      "id": 71676,
+      "kod": "INVEO",
+      "ad": "INVEO YATIRIM HOLDING",
+      "tip": "Hisse"
+    },
+    { "id": 80031, "kod": "INVES", "ad": "INVESTCO HOLDING", "tip": "Hisse" },
+    { "id": 269, "kod": "IPEKE", "ad": "IPEK DOGAL ENERJI", "tip": "Hisse" },
+    { "id": 272, "kod": "ISATR", "ad": "IS BANKASI (A)", "tip": "Hisse" },
+    { "id": 4208, "kod": "ISBIR", "ad": "ISBIR HOLDING", "tip": "Hisse" },
+    { "id": 274, "kod": "ISBTR", "ad": "IS BANKASI (B)", "tip": "Hisse" },
+    { "id": 275, "kod": "ISCTR", "ad": "IS BANKASI (C)", "tip": "Hisse" },
+    {
+      "id": 9334,
+      "kod": "ISDMR",
+      "ad": "ISKENDERUN DEMIR CELIK",
+      "tip": "Hisse"
+    },
+    { "id": 276, "kod": "ISFIN", "ad": "IS FIN.KIR.", "tip": "Hisse" },
+    { "id": 989, "kod": "ISGSY", "ad": "IS GIRISIM", "tip": "Hisse" },
+    { "id": 277, "kod": "ISGYO", "ad": "IS GMYO", "tip": "Hisse" },
+    { "id": 73052, "kod": "ISKPL", "ad": "ISIK PLASTIK", "tip": "Hisse" },
+    { "id": 73051, "kod": "ISKPLHE", "ad": "IŞIK PLASTİK", "tip": "Hisse" },
+    { "id": 278, "kod": "ISKUR", "ad": "IS BANKASI (KUR.)", "tip": "Hisse" },
+    { "id": 1546, "kod": "ISMEN", "ad": "IS Y. MEN. DEG.", "tip": "Hisse" },
+    {
+      "id": 77523,
+      "kod": "ISSEN",
+      "ad": "ISBIR SENTETIK DOKUMA",
+      "tip": "Hisse"
+    },
+    { "id": 280, "kod": "ISYAT", "ad": "IS YAT. ORT.", "tip": "Hisse" },
+    { "id": 2147, "kod": "ITTFH", "ad": "LORAS HOLDING", "tip": "Hisse" },
+    { "id": 94176, "kod": "IZENR", "ad": "IZDEMIR ENERJI", "tip": "Hisse" },
+    { "id": 9009, "kod": "IZFAS", "ad": "IZMIR FIRCA", "tip": "Hisse" },
+    { "id": 81610, "kod": "IZINV", "ad": "IZ YATIRIM HOLDING", "tip": "Hisse" },
+    { "id": 286, "kod": "IZMDC", "ad": "IZMIR DEMIR CELIK", "tip": "Hisse" },
+    { "id": 4078, "kod": "JANTS", "ad": "JANTSA JANT SANAYI", "tip": "Hisse" },
+    { "id": 303, "kod": "KAPLM", "ad": "KAPLAMIN", "tip": "Hisse" },
+    { "id": 1484, "kod": "KAREL", "ad": "KAREL ELEKTRONIK", "tip": "Hisse" },
+    { "id": 304, "kod": "KARSN", "ad": "KARSAN OTOMOTIV", "tip": "Hisse" },
+    { "id": 305, "kod": "KARTN", "ad": "KARTONSAN", "tip": "Hisse" },
+    { "id": 75682, "kod": "KARYE", "ad": "KARTAL YEN. ENERJI", "tip": "Hisse" },
+    { "id": 2334, "kod": "KATMR", "ad": "KATMERCILER EKIPMAN", "tip": "Hisse" },
+    {
+      "id": 91826,
+      "kod": "KAYSE",
+      "ad": "KAYSERI SEKER FABRIKASI",
+      "tip": "Hisse"
+    },
+    { "id": 99428, "kod": "KBORU", "ad": "KUZEY BORU", "tip": "Hisse" },
+    { "id": 83110, "kod": "KCAER", "ad": "KOCAER CELIK", "tip": "Hisse" },
+    { "id": 307, "kod": "KCHOL", "ad": "KOC HOLDING", "tip": "Hisse" },
+    { "id": 308, "kod": "KENT", "ad": "KENT GIDA", "tip": "Hisse" },
+    {
+      "id": 100,
+      "kod": "KERVN",
+      "ad": "KERVANSARAY YAT. HOLDING",
+      "tip": "Hisse"
+    },
+    { "id": 309, "kod": "KERVT", "ad": "KEREVITAS GIDA", "tip": "Hisse" },
+    { "id": 56589, "kod": "KFEIN", "ad": "KAFEIN YAZILIM", "tip": "Hisse" },
+    { "id": 75676, "kod": "KGYO", "ad": "KORAY GMYO", "tip": "Hisse" },
+    {
+      "id": 76895,
+      "kod": "KIMMR",
+      "ad": "KIM MARKET-ERSAN ALISVERIS",
+      "tip": "Hisse"
+    },
+    { "id": 2588, "kod": "KLGYO", "ad": "KILER GMYO", "tip": "Hisse" },
+    {
+      "id": 74863,
+      "kod": "KLKIM",
+      "ad": "KALEKIM KIMYEVI MADDELER",
+      "tip": "Hisse"
+    },
+    { "id": 313, "kod": "KLMSN", "ad": "KLIMASAN KLIMA", "tip": "Hisse" },
+    { "id": 529, "kod": "KLNMA", "ad": "T. KALKINMA BANK.", "tip": "Hisse" },
+    { "id": 83112, "kod": "KLRHO", "ad": "KILER HOLDING", "tip": "Hisse" },
+    { "id": 93785, "kod": "KLSER", "ad": "KALESERAMIK", "tip": "Hisse" },
+    { "id": 80032, "kod": "KLSYN", "ad": "KOLEKSIYON MOBILYA", "tip": "Hisse" },
+    { "id": 78416, "kod": "KMPUR", "ad": "KIMTEKS POLIURETAN", "tip": "Hisse" },
+    { "id": 314, "kod": "KNFRT", "ad": "KONFRUT GIDA", "tip": "Hisse" },
+    { "id": 109970, "kod": "KOCMT", "ad": "KOC METALURJI", "tip": "Hisse" },
+    { "id": 77742, "kod": "KONKA", "ad": "KONYA KAGIT", "tip": "Hisse" },
+    {
+      "id": 71892,
+      "kod": "KONTR",
+      "ad": "KONTROLMATIK TEKNOLOJI",
+      "tip": "Hisse"
+    },
+    { "id": 316, "kod": "KONYA", "ad": "KONYA CIMENTO", "tip": "Hisse" },
+    { "id": 90626, "kod": "KOPOL", "ad": "KOZA POLYESTER", "tip": "Hisse" },
+    {
+      "id": 317,
+      "kod": "KORDS",
+      "ad": "KORDSA TEKNIK TEKSTIL",
+      "tip": "Hisse"
+    },
+    { "id": 109972, "kod": "KOTON", "ad": "KOTON MAGAZACILIK", "tip": "Hisse" },
+    { "id": 319, "kod": "KOZAA", "ad": "KOZA MADENCILIK", "tip": "Hisse" },
+    { "id": 2177, "kod": "KOZAL", "ad": "KOZA ALTIN", "tip": "Hisse" },
+    { "id": 320, "kod": "KRDMA", "ad": "KARDEMIR (A)", "tip": "Hisse" },
+    { "id": 321, "kod": "KRDMB", "ad": "KARDEMIR (B)", "tip": "Hisse" },
+    { "id": 322, "kod": "KRDMD", "ad": "KARDEMIR (D)", "tip": "Hisse" },
+    { "id": 8993, "kod": "KRGYO", "ad": "KORFEZ GMYO", "tip": "Hisse" },
+    { "id": 2649, "kod": "KRONT", "ad": "KRON TEKNOLOJI", "tip": "Hisse" },
+    {
+      "id": 83175,
+      "kod": "KRPLS",
+      "ad": "KOROPLAST TEMIZLIK AMBALAJ",
+      "tip": "Hisse"
+    },
+    { "id": 323, "kod": "KRSTL", "ad": "KRISTAL KOLA", "tip": "Hisse" },
+    { "id": 324, "kod": "KRTEK", "ad": "KARSU TEKSTIL", "tip": "Hisse" },
+    { "id": 72521, "kod": "KRVGD", "ad": "KERVAN GIDA", "tip": "Hisse" },
+    {
+      "id": 4209,
+      "kod": "KSTUR",
+      "ad": "KUSTUR KUSADASI TURIZM",
+      "tip": "Hisse"
+    },
+    {
+      "id": 92763,
+      "kod": "KTLEV",
+      "ad": "KATILIMEVIM TAS. FIN.",
+      "tip": "Hisse"
+    },
+    {
+      "id": 75684,
+      "kod": "KTSKR",
+      "ad": "KUTAHYA SEKER FABRIKASI",
+      "tip": "Hisse"
+    },
+    { "id": 75614, "kod": "KTSKRHE", "ad": "KUTAHYA SEKER", "tip": "Hisse" },
+    { "id": 327, "kod": "KUTPO", "ad": "KUTAHYA PORSELEN", "tip": "Hisse" },
+    { "id": 84896, "kod": "KUVVA", "ad": "KUVVA GIDA", "tip": "Hisse" },
+    { "id": 4086, "kod": "KUYAS", "ad": "KUYAS YATIRIM", "tip": "Hisse" },
+    { "id": 75933, "kod": "KZBGY", "ad": "KIZILBUK GYO", "tip": "Hisse" },
+    { "id": 94828, "kod": "KZGYO", "ad": "KUZUGRUP GMYO", "tip": "Hisse" },
+    { "id": 80411, "kod": "LIDER", "ad": "LDR TURIZM", "tip": "Hisse" },
+    { "id": 9006, "kod": "LIDFA", "ad": "LIDER FAKTORING", "tip": "Hisse" },
+    { "id": 109971, "kod": "LILAK", "ad": "LILA KAGIT", "tip": "Hisse" },
+    { "id": 329, "kod": "LINK", "ad": "LINK BILGISAYAR", "tip": "Hisse" },
+    { "id": 2484, "kod": "LKMNH", "ad": "LOKMAN HEKIM SAGLIK", "tip": "Hisse" },
+    {
+      "id": 103899,
+      "kod": "LMKDC",
+      "ad": "LIMAK DOGU ANADOLU",
+      "tip": "Hisse"
+    },
+    { "id": 331, "kod": "LOGO", "ad": "LOGO YAZILIM", "tip": "Hisse" },
+    { "id": 97763, "kod": "LRSHO", "ad": "LORAS HOLDING", "tip": "Hisse" },
+    { "id": 333, "kod": "LUKSK", "ad": "LUKS KADIFE", "tip": "Hisse" },
+    { "id": 334, "kod": "MAALT", "ad": "MARMARIS ALTINYUNUS", "tip": "Hisse" },
+    {
+      "id": 88068,
+      "kod": "MACKO",
+      "ad": "MACKOLIK INTERNET HIZMETLERI",
+      "tip": "Hisse"
+    },
+    { "id": 77516, "kod": "MAGEN", "ad": "MARGUN ENERJI", "tip": "Hisse" },
+    { "id": 82941, "kod": "MAKIM", "ad": "MAKIM MAKINE", "tip": "Hisse" },
+    { "id": 335, "kod": "MAKTK", "ad": "MAKINA TAKIM", "tip": "Hisse" },
+    {
+      "id": 75683,
+      "kod": "MANAS",
+      "ad": "MANAS ENERJI YONETIMI",
+      "tip": "Hisse"
+    },
+    {
+      "id": 97697,
+      "kod": "MARBL",
+      "ad": "TUREKS TURUNC MADENCILIK",
+      "tip": "Hisse"
+    },
+    {
+      "id": 1118,
+      "kod": "MARKA",
+      "ad": "MARKA YATIRIM HOLDING",
+      "tip": "Hisse"
+    },
+    { "id": 350, "kod": "MARTI", "ad": "MARTI OTEL", "tip": "Hisse" },
+    { "id": 9555, "kod": "MAVI", "ad": "MAVI GIYIM", "tip": "Hisse" },
+    {
+      "id": 75679,
+      "kod": "MEDTR",
+      "ad": "MEDITERA TIBBI MALZEME",
+      "tip": "Hisse"
+    },
+    { "id": 3832, "kod": "MEGAP", "ad": "MEGA POLIETILEN", "tip": "Hisse" },
+    { "id": 99429, "kod": "MEGMT", "ad": "MEGA METAL", "tip": "Hisse" },
+    { "id": 96431, "kod": "MEKAG", "ad": "MEKA BETON", "tip": "Hisse" },
+    { "id": 338, "kod": "MEMSA", "ad": "MENSA", "tip": "Hisse" },
+    {
+      "id": 2822,
+      "kod": "MEPET",
+      "ad": "METRO PETROL VE TESISLERI",
+      "tip": "Hisse"
+    },
+    { "id": 74865, "kod": "MERCN", "ad": "MERCAN KIMYA", "tip": "Hisse" },
+    { "id": 3978, "kod": "MERIT", "ad": "MERIT TURIZM", "tip": "Hisse" },
+    { "id": 339, "kod": "MERKO", "ad": "MERKO GIDA", "tip": "Hisse" },
+    { "id": 575, "kod": "METRO", "ad": "METRO HOLDING", "tip": "Hisse" },
+    { "id": 341, "kod": "METUR", "ad": "METEMTUR YATIRIM", "tip": "Hisse" },
+    { "id": 346, "kod": "MGROS", "ad": "MIGROS TICARET", "tip": "Hisse" },
+    { "id": 96434, "kod": "MHRGY", "ad": "MHR GMYO", "tip": "Hisse" },
+    { "id": 77743, "kod": "MIATK", "ad": "MIA TEKNOLOJI", "tip": "Hisse" },
+    { "id": 349, "kod": "MIPAZ", "ad": "MILPA", "tip": "Hisse" },
+    {
+      "id": 3083,
+      "kod": "MMCAS",
+      "ad": "MMC SAN. VE TIC. YAT.",
+      "tip": "Hisse"
+    },
+    { "id": 351, "kod": "MNDRS", "ad": "MENDERES TEKSTIL", "tip": "Hisse" },
+    { "id": 87016, "kod": "MNDTR", "ad": "MONDI TURKEY", "tip": "Hisse" },
+    { "id": 77744, "kod": "MOBTL", "ad": "MOBILTEL ILETISIM", "tip": "Hisse" },
+    { "id": 103903, "kod": "MOGAN", "ad": "MOGAN ENERJI", "tip": "Hisse" },
+    { "id": 2990, "kod": "MPARK", "ad": "MLP SAGLIK", "tip": "Hisse" },
+    { "id": 2297, "kod": "MRGYO", "ad": "MARTI GMYO", "tip": "Hisse" },
+    { "id": 354, "kod": "MRSHL", "ad": "MARSHALL", "tip": "Hisse" },
+    { "id": 9538, "kod": "MSGYO", "ad": "MISTRAL GMYO", "tip": "Hisse" },
+    {
+      "id": 73922,
+      "kod": "MTRKS",
+      "ad": "MATRIKS BILGI DAGITIM",
+      "tip": "Hisse"
+    },
+    {
+      "id": 73920,
+      "kod": "MTRKSHE",
+      "ad": "MATRİKS VERİ DAĞITIM",
+      "tip": "Hisse"
+    },
+    { "id": 57031, "kod": "MTRYO", "ad": "METRO YAT. ORT.", "tip": "Hisse" },
+    { "id": 363, "kod": "MZHLD", "ad": "MAZHAR ZORLU HOLDING", "tip": "Hisse" },
+    { "id": 66055, "kod": "NATEN", "ad": "NATUREL ENERJI", "tip": "Hisse" },
+    { "id": 379, "kod": "NETAS", "ad": "NETAS TELEKOM.", "tip": "Hisse" },
+    { "id": 3628, "kod": "NIBAS", "ad": "NIGBAS NIGDE BETON", "tip": "Hisse" },
+    { "id": 73924, "kod": "NTGAZ", "ad": "NATURELGAZ", "tip": "Hisse" },
+    { "id": 386, "kod": "NTHOL", "ad": "NET HOLDING", "tip": "Hisse" },
+    { "id": 388, "kod": "NUGYO", "ad": "NUROL GMYO", "tip": "Hisse" },
+    { "id": 389, "kod": "NUHCM", "ad": "NUH CIMENTO", "tip": "Hisse" },
+    { "id": 103900, "kod": "OBAMS", "ad": "OBA MAKARNACILIK", "tip": "Hisse" },
+    { "id": 83908, "kod": "OBASE", "ad": "OBASE BILGISAYAR", "tip": "Hisse" },
+    { "id": 6863, "kod": "ODAS", "ad": "ODAS ELEKTRIK", "tip": "Hisse" },
+    { "id": 105674, "kod": "ODINE", "ad": "ODINE TEKNOLOJI", "tip": "Hisse" },
+    { "id": 94177, "kod": "OFSYM", "ad": "OFIS YEM GIDA", "tip": "Hisse" },
+    {
+      "id": 75677,
+      "kod": "OLMK",
+      "ad": "MONDI OLMUKSAN KAGIT VE AMBALAJ",
+      "tip": "Hisse"
+    },
+    {
+      "id": 87994,
+      "kod": "ONCSM",
+      "ad": "ONCOSEM ONKOLOJIK SISTEMLER",
+      "tip": "Hisse"
+    },
+    { "id": 112183, "kod": "ONRYT", "ad": "ONUR TEKNOLOJI", "tip": "Hisse" },
+    {
+      "id": 76385,
+      "kod": "ORCAY",
+      "ad": "ORCAY ORTAKOY CAY SANAYI",
+      "tip": "Hisse"
+    },
+    { "id": 3828, "kod": "ORGE", "ad": "ORGE ENERJI ELEKTRIK", "tip": "Hisse" },
+    {
+      "id": 4248,
+      "kod": "ORMA",
+      "ad": "ORMA ORMAN MAHSULLERI",
+      "tip": "Hisse"
+    },
+    { "id": 3624, "kod": "OSMEN", "ad": "OSMANLI MENKUL", "tip": "Hisse" },
+    {
+      "id": 3822,
+      "kod": "OSTIM",
+      "ad": "OSTIM ENDUSTRIYEL YAT",
+      "tip": "Hisse"
+    },
+    { "id": 398, "kod": "OTKAR", "ad": "OTOKAR", "tip": "Hisse" },
+    { "id": 78910, "kod": "OTTO", "ad": "OTTO HOLDING", "tip": "Hisse" },
+    { "id": 70518, "kod": "OYAKC", "ad": "OYAK CIMENTO", "tip": "Hisse" },
+    { "id": 1542, "kod": "OYAYO", "ad": "OYAK YAT. ORT.", "tip": "Hisse" },
+    {
+      "id": 3815,
+      "kod": "OYLUM",
+      "ad": "OYLUM SINAI YATIRIMLAR",
+      "tip": "Hisse"
+    },
+    {
+      "id": 75351,
+      "kod": "OYYAT",
+      "ad": "OYAK YATIRIM MENKUL",
+      "tip": "Hisse"
+    },
+    { "id": 400, "kod": "OZGYO", "ad": "OZDERICI GMYO", "tip": "Hisse" },
+    { "id": 3613, "kod": "OZKGY", "ad": "OZAK GMYO", "tip": "Hisse" },
+    { "id": 9101, "kod": "OZRDN", "ad": "OZERDEN AMBALAJ", "tip": "Hisse" },
+    { "id": 87315, "kod": "OZSUB", "ad": "OZSU BALIK", "tip": "Hisse" },
+    { "id": 112184, "kod": "OZYSR", "ad": "OZYASAR TEL", "tip": "Hisse" },
+    { "id": 6952, "kod": "PAGYO", "ad": "PANORA GMYO", "tip": "Hisse" },
+    { "id": 72294, "kod": "PAMEL", "ad": "PAMEL ELEKTRIK", "tip": "Hisse" },
+    { "id": 69040, "kod": "PAPIL", "ad": "PAPILON SAVUNMA", "tip": "Hisse" },
+    { "id": 430, "kod": "PARSN", "ad": "PARSAN", "tip": "Hisse" },
+    {
+      "id": 92764,
+      "kod": "PASEU",
+      "ad": "PASIFIK EURASIA LOJISTIK",
+      "tip": "Hisse"
+    },
+    { "id": 103034, "kod": "PATEK", "ad": "PASIFIK TEKNOLOJI", "tip": "Hisse" },
+    { "id": 78006, "kod": "PCILT", "ad": "PC ILETISIM MEDYA", "tip": "Hisse" },
+    { "id": 224, "kod": "PEGYO", "ad": "PERA YATIRIM HOLDING", "tip": "Hisse" },
+    {
+      "id": 112711,
+      "kod": "PEHOL",
+      "ad": "PERA YATIRIM HOLDING",
+      "tip": "Hisse"
+    },
+    { "id": 2991, "kod": "PEKGY", "ad": "PEKER GMYO", "tip": "Hisse" },
+    { "id": 433, "kod": "PENGD", "ad": "PENGUEN GIDA", "tip": "Hisse" },
+    {
+      "id": 74864,
+      "kod": "PENTA",
+      "ad": "PENTA TEKNOLOJI URUNLERI DAGITIM",
+      "tip": "Hisse"
+    },
+    { "id": 435, "kod": "PETKM", "ad": "PETKIM", "tip": "Hisse" },
+    { "id": 436, "kod": "PETUN", "ad": "PINAR ET VE UN", "tip": "Hisse" },
+    { "id": 6507, "kod": "PGSUS", "ad": "PEGASUS", "tip": "Hisse" },
+    { "id": 438, "kod": "PINSU", "ad": "PINAR SU", "tip": "Hisse" },
+    { "id": 960, "kod": "PKART", "ad": "PLASTIKKART", "tip": "Hisse" },
+    { "id": 439, "kod": "PKENT", "ad": "PETROKENT TURIZM", "tip": "Hisse" },
+    { "id": 87370, "kod": "PLTUR", "ad": "PLATFORM TURIZM", "tip": "Hisse" },
+    {
+      "id": 79538,
+      "kod": "PNLSN",
+      "ad": "PANELSAN CATI CEPHE",
+      "tip": "Hisse"
+    },
+    { "id": 444, "kod": "PNSUT", "ad": "PINAR SUT", "tip": "Hisse" },
+    { "id": 3841, "kod": "POLHO", "ad": "POLISAN HOLDING", "tip": "Hisse" },
+    { "id": 8273, "kod": "POLTK", "ad": "POLITEKNIK METAL", "tip": "Hisse" },
+    { "id": 82940, "kod": "PRDGS", "ad": "PARDUS GIRISIM", "tip": "Hisse" },
+    { "id": 448, "kod": "PRKAB", "ad": "TURK PRYSMIAN KABLO", "tip": "Hisse" },
+    { "id": 449, "kod": "PRKME", "ad": "PARK ELEK.MADENCILIK", "tip": "Hisse" },
+    {
+      "id": 3829,
+      "kod": "PRZMA",
+      "ad": "PRIZMA PRESS MATBAACILIK",
+      "tip": "Hisse"
+    },
+    {
+      "id": 9079,
+      "kod": "PSDTC",
+      "ad": "PERGAMON DIS TICARET",
+      "tip": "Hisse"
+    },
+    { "id": 78197, "kod": "PSGYO", "ad": "PASIFIK GMYO", "tip": "Hisse" },
+    { "id": 200, "kod": "QNBFB", "ad": "QNB FINANSBANK", "tip": "Hisse" },
+    {
+      "id": 56402,
+      "kod": "QNBFL",
+      "ad": "QNB FINANS FINANSAL KIRALAMA",
+      "tip": "Hisse"
+    },
+    {
+      "id": 74204,
+      "kod": "QUAGR",
+      "ad": "QUA GRANITE HAYAL YAPI",
+      "tip": "Hisse"
+    },
+    { "id": 73923, "kod": "QUAGRHE", "ad": "QUA GRANİTE", "tip": "Hisse" },
+    {
+      "id": 55790,
+      "kod": "RALYH",
+      "ad": "RAL YATIRIM HOLDING",
+      "tip": "Hisse"
+    },
+    { "id": 456, "kod": "RAYSG", "ad": "RAY SIGORTA", "tip": "Hisse" },
+    { "id": 95249, "kod": "REEDR", "ad": "REEDER TEKNOLOJI", "tip": "Hisse" },
+    {
+      "id": 108373,
+      "kod": "RGYAS",
+      "ad": "RONESANS GAYRIMENKUL YAT.",
+      "tip": "Hisse"
+    },
+    { "id": 579, "kod": "RHEAG", "ad": "ICU GIRISIM", "tip": "Hisse" },
+    {
+      "id": 78007,
+      "kod": "RNPOL",
+      "ad": "RAINBOW POLIKARBONAT",
+      "tip": "Hisse"
+    },
+    { "id": 7986, "kod": "RODRG", "ad": "RODRIGO TEKSTIL", "tip": "Hisse" },
+    { "id": 6714, "kod": "ROYAL", "ad": "ROYAL HALI", "tip": "Hisse" },
+    { "id": 9000, "kod": "RTALB", "ad": "RTA LABORATUVARLARI", "tip": "Hisse" },
+    { "id": 83111, "kod": "RUBNS", "ad": "RUBENIS TEKSTIL", "tip": "Hisse" },
+    { "id": 2230, "kod": "RYGYO", "ad": "REYSAS GMYO", "tip": "Hisse" },
+    { "id": 1273, "kod": "RYSAS", "ad": "REYSAS LOJISTIK", "tip": "Hisse" },
+    {
+      "id": 11,
+      "kod": "SAFKR",
+      "ad": "SAFKAR EGE SOGUTMACILIK",
+      "tip": "Hisse"
+    },
+    { "id": 463, "kod": "SAHOL", "ad": "SABANCI HOLDING", "tip": "Hisse" },
+    { "id": 2757, "kod": "SAMAT", "ad": "SARAY MATBAACILIK", "tip": "Hisse" },
+    { "id": 8082, "kod": "SANEL", "ad": "SANEL MUHENDISLIK", "tip": "Hisse" },
+    { "id": 3806, "kod": "SANFM", "ad": "SANIFOAM ENDUSTRI", "tip": "Hisse" },
+    { "id": 464, "kod": "SANKO", "ad": "SANKO PAZARLAMA", "tip": "Hisse" },
+    { "id": 465, "kod": "SARKY", "ad": "SARKUYSAN", "tip": "Hisse" },
+    { "id": 467, "kod": "SASA", "ad": "SASA POLYESTER", "tip": "Hisse" },
+    {
+      "id": 7464,
+      "kod": "SAYAS",
+      "ad": "SAY YENILENEBILIR ENERJI",
+      "tip": "Hisse"
+    },
+    {
+      "id": 87995,
+      "kod": "SDTTR",
+      "ad": "SDT UZAY VE SAVUNMA",
+      "tip": "Hisse"
+    },
+    { "id": 113366, "kod": "SEGMN", "ad": "SEĞMEN GIDA", "tip": "Hisse" },
+    { "id": 82312, "kod": "SEGYO", "ad": "SEKER GMYO", "tip": "Hisse" },
+    { "id": 936, "kod": "SEKFK", "ad": "SEKER FIN. KIR.", "tip": "Hisse" },
+    { "id": 8064, "kod": "SEKUR", "ad": "SEKURO PLASTIK", "tip": "Hisse" },
+    { "id": 1328, "kod": "SELEC", "ad": "SELCUK ECZA DEPOSU", "tip": "Hisse" },
+    { "id": 478, "kod": "SELGD", "ad": "SELCUK GIDA", "tip": "Hisse" },
+    { "id": 75352, "kod": "SELVA", "ad": "SELVA GIDA", "tip": "Hisse" },
+    { "id": 479, "kod": "SERVE", "ad": "KUVVA GIDA", "tip": "Hisse" },
+    { "id": 9221, "kod": "SEYKM", "ad": "SEYITLER KIMYA", "tip": "Hisse" },
+    { "id": 1360, "kod": "SILVR", "ad": "SILVERLINE ENDUSTRI", "tip": "Hisse" },
+    { "id": 492, "kod": "SISE", "ad": "SISE CAM", "tip": "Hisse" },
+    { "id": 495, "kod": "SKBNK", "ad": "SEKERBANK", "tip": "Hisse" },
+    { "id": 498, "kod": "SKTAS", "ad": "SOKTAS", "tip": "Hisse" },
+    {
+      "id": 105169,
+      "kod": "SKYLP",
+      "ad": "SKYALP FINANSAL TEKNOLOJILER",
+      "tip": "Hisse"
+    },
+    { "id": 98655, "kod": "SKYMD", "ad": "SEKER YATIRIM", "tip": "Hisse" },
+    { "id": 64402, "kod": "SMART", "ad": "SMARTIKS YAZILIM", "tip": "Hisse" },
+    {
+      "id": 80192,
+      "kod": "SMRTG",
+      "ad": "SMART GUNES ENERJISI TEK.",
+      "tip": "Hisse"
+    },
+    { "id": 1557, "kod": "SNGYO", "ad": "SINPAS GMYO", "tip": "Hisse" },
+    { "id": 87313, "kod": "SNICA", "ad": "SANICA ISI SANAYI", "tip": "Hisse" },
+    {
+      "id": 9104,
+      "kod": "SNKRN",
+      "ad": "SENKRON SIBER GUVENLIK YAZILIM",
+      "tip": "Hisse"
+    },
+    { "id": 503, "kod": "SNPAM", "ad": "SONMEZ PAMUKLU", "tip": "Hisse" },
+    {
+      "id": 3904,
+      "kod": "SODSN",
+      "ad": "SODAS SODYUM SANAYII",
+      "tip": "Hisse"
+    },
+    { "id": 87996, "kod": "SOKE", "ad": "SOKE DEGIRMENCILIK", "tip": "Hisse" },
+    {
+      "id": 56588,
+      "kod": "SOKM",
+      "ad": "SOK MARKETLER TICARET",
+      "tip": "Hisse"
+    },
+    { "id": 505, "kod": "SONME", "ad": "SONMEZ FILAMENT", "tip": "Hisse" },
+    { "id": 6500, "kod": "SRVGY", "ad": "SERVET GMYO", "tip": "Hisse" },
+    { "id": 2989, "kod": "SUMAS", "ad": "SUMAS SUNI TAHTA", "tip": "Hisse" },
+    { "id": 81542, "kod": "SUNTK", "ad": "SUN TEKSTIL", "tip": "Hisse" },
+    {
+      "id": 99427,
+      "kod": "SURGY",
+      "ad": "SUR TATIL EVLERI GMYO",
+      "tip": "Hisse"
+    },
+    { "id": 80864, "kod": "SUWEN", "ad": "SUWEN TEKSTIL", "tip": "Hisse" },
+    { "id": 97072, "kod": "TABGD", "ad": "TAB GIDA", "tip": "Hisse" },
+    { "id": 6965, "kod": "TACTR", "ad": "OTTO HOLDING", "tip": "Hisse" },
+    {
+      "id": 95247,
+      "kod": "TARKM",
+      "ad": "TARKIM BITKI KORUMA",
+      "tip": "Hisse"
+    },
+    {
+      "id": 94178,
+      "kod": "TATEN",
+      "ad": "TATLIPINAR ENERJI URETIM",
+      "tip": "Hisse"
+    },
+    { "id": 517, "kod": "TATGD", "ad": "TAT GIDA", "tip": "Hisse" },
+    { "id": 1518, "kod": "TAVHL", "ad": "TAV HAVALIMANLARI", "tip": "Hisse" },
+    { "id": 518, "kod": "TBORG", "ad": "T.TUBORG", "tip": "Hisse" },
+    { "id": 519, "kod": "TCELL", "ad": "TURKCELL", "tip": "Hisse" },
+    { "id": 2992, "kod": "TDGYO", "ad": "TREND GMYO", "tip": "Hisse" },
+    { "id": 526, "kod": "TEKTU", "ad": "TEK-ART TURIZM", "tip": "Hisse" },
+    {
+      "id": 87992,
+      "kod": "TERA",
+      "ad": "TERA YATIRIM MENKUL DEGERLER",
+      "tip": "Hisse"
+    },
+    { "id": 77515, "kod": "TETMT", "ad": "TETAMAT GIDA", "tip": "Hisse" },
+    {
+      "id": 76450,
+      "kod": "TEZOL",
+      "ad": "EUROPAP TEZOL KAGIT",
+      "tip": "Hisse"
+    },
+    { "id": 3907, "kod": "TGSAS", "ad": "TGS DIS TICARET", "tip": "Hisse" },
+    { "id": 527, "kod": "THYAO", "ad": "TURK HAVA YOLLARI", "tip": "Hisse" },
+    { "id": 528, "kod": "TIRE", "ad": "MONDI TIRE KUTSAN", "tip": "Hisse" },
+    { "id": 1638, "kod": "TKFEN", "ad": "TEKFEN HOLDING", "tip": "Hisse" },
+    {
+      "id": 3831,
+      "kod": "TKNSA",
+      "ad": "TEKNOSA IC VE DIS TICARET",
+      "tip": "Hisse"
+    },
+    { "id": 2985, "kod": "TLMAN", "ad": "TRABZON LIMAN", "tip": "Hisse" },
+    {
+      "id": 8195,
+      "kod": "TMPOL",
+      "ad": "TEMAPOL POLIMER PLASTIK",
+      "tip": "Hisse"
+    },
+    {
+      "id": 4373,
+      "kod": "TMSN",
+      "ad": "TUMOSAN MOTOR VE TRAKTOR",
+      "tip": "Hisse"
+    },
+    { "id": 88067, "kod": "TNZTP", "ad": "TAPDI TINAZTEPE", "tip": "Hisse" },
+    { "id": 535, "kod": "TOASO", "ad": "TOFAS OTO. FAB.", "tip": "Hisse" },
+    { "id": 539, "kod": "TRCAS", "ad": "TURCAS PETROL", "tip": "Hisse" },
+    { "id": 2304, "kod": "TRGYO", "ad": "TORUNLAR GMYO", "tip": "Hisse" },
+    { "id": 73491, "kod": "TRILC", "ad": "TURK ILAC SERUM", "tip": "Hisse" },
+    { "id": 2195, "kod": "TSGYO", "ad": "TSKB GMYO", "tip": "Hisse" },
+    { "id": 551, "kod": "TSKB", "ad": "T.S.K.B.", "tip": "Hisse" },
+    { "id": 1108, "kod": "TSPOR", "ad": "TRABZONSPOR SPORTIF", "tip": "Hisse" },
+    { "id": 1772, "kod": "TTKOM", "ad": "TURK TELEKOM", "tip": "Hisse" },
+    { "id": 903, "kod": "TTRAK", "ad": "TURK TRAKTOR", "tip": "Hisse" },
+    { "id": 9005, "kod": "TUCLK", "ad": "TUGCELIK", "tip": "Hisse" },
+    { "id": 554, "kod": "TUKAS", "ad": "TUKAS", "tip": "Hisse" },
+    { "id": 555, "kod": "TUPRS", "ad": "TUPRAS", "tip": "Hisse" },
+    {
+      "id": 73971,
+      "kod": "TUREX",
+      "ad": "TUREKS TURIZM TASIMACILIK",
+      "tip": "Hisse"
+    },
+    { "id": 73921, "kod": "TUREXHE", "ad": "TUREX TURİZM", "tip": "Hisse" },
+    {
+      "id": 7730,
+      "kod": "TURGG",
+      "ad": "TURKER PROJE GAYRIMENKUL",
+      "tip": "Hisse"
+    },
+    { "id": 71277, "kod": "TURSG", "ad": "TURKIYE SIGORTA", "tip": "Hisse" },
+    { "id": 1487, "kod": "UFUK", "ad": "UFUK YATIRIM", "tip": "Hisse" },
+    { "id": 4041, "kod": "ULAS", "ad": "ULASLAR TURIZM YAT.", "tip": "Hisse" },
+    { "id": 716, "kod": "ULKER", "ad": "ULKER BISKUVI", "tip": "Hisse" },
+    { "id": 77522, "kod": "ULUFA", "ad": "ULUSAL FAKTORING", "tip": "Hisse" },
+    { "id": 9083, "kod": "ULUSE", "ad": "ULUSOY ELEKTRIK", "tip": "Hisse" },
+    { "id": 9082, "kod": "ULUUN", "ad": "ULUSOY UN SANAYI", "tip": "Hisse" },
+    { "id": 9089, "kod": "UMPAS", "ad": "UMPAS HOLDING", "tip": "Hisse" },
+    {
+      "id": 75180,
+      "kod": "UNLU",
+      "ad": "UNLU YATIRIM HOLDING",
+      "tip": "Hisse"
+    },
+    { "id": 563, "kod": "USAK", "ad": "USAK SERAMIK", "tip": "Hisse" },
+    {
+      "id": 76196,
+      "kod": "USDTR",
+      "ad": "QNB FINANSPORTFOY ABD DOLARI BYF",
+      "tip": "Hisse"
+    },
+    {
+      "id": 3811,
+      "kod": "USDTRF",
+      "ad": "ABD HAZ BONOSU DOLAR BYF",
+      "tip": "Hisse"
+    },
+    { "id": 3976, "kod": "UZERB", "ad": "UZERTAS BOYA", "tip": "Hisse" },
+    { "id": 1241, "kod": "VAKBN", "ad": "VAKIFLAR BANKASI", "tip": "Hisse" },
+    { "id": 573, "kod": "VAKFN", "ad": "VAKIF FIN. KIR.", "tip": "Hisse" },
+    { "id": 574, "kod": "VAKKO", "ad": "VAKKO TEKSTIL", "tip": "Hisse" },
+    { "id": 2877, "kod": "VANGD", "ad": "VANET GIDA", "tip": "Hisse" },
+    { "id": 75678, "kod": "VBTYZ", "ad": "VBT YAZILIM", "tip": "Hisse" },
+    { "id": 9258, "kod": "VERTU", "ad": "VERUSATURK GIRISIM", "tip": "Hisse" },
+    { "id": 8073, "kod": "VERUS", "ad": "VERUSA HOLDING", "tip": "Hisse" },
+    { "id": 1326, "kod": "VESBE", "ad": "VESTEL BEYAZ ESYA", "tip": "Hisse" },
+    { "id": 578, "kod": "VESTL", "ad": "VESTEL", "tip": "Hisse" },
+    { "id": 580, "kod": "VKFYO", "ad": "VAKIF YAT. ORT.", "tip": "Hisse" },
+    { "id": 581, "kod": "VKGYO", "ad": "VAKIF GMYO", "tip": "Hisse" },
+    { "id": 582, "kod": "VKING", "ad": "VIKING KAGIT", "tip": "Hisse" },
+    { "id": 97071, "kod": "VRGYO", "ad": "VERA KONSEPT GMYO", "tip": "Hisse" },
+    {
+      "id": 2620,
+      "kod": "YAPRK",
+      "ad": "YAPRAK SUT VE BESI CIFT.",
+      "tip": "Hisse"
+    },
+    { "id": 612, "kod": "YATAS", "ad": "YATAS", "tip": "Hisse" },
+    {
+      "id": 8074,
+      "kod": "YAYLA",
+      "ad": "YAYLA EN. UR. TUR. VE INS",
+      "tip": "Hisse"
+    },
+    {
+      "id": 4044,
+      "kod": "YBTAS",
+      "ad": "YIBITAS INSAAT MALZEME",
+      "tip": "Hisse"
+    },
+    {
+      "id": 76384,
+      "kod": "YEOTK",
+      "ad": "YEO TEKNOLOJI ENERJI",
+      "tip": "Hisse"
+    },
+    {
+      "id": 721,
+      "kod": "YESIL",
+      "ad": "YESIL YATIRIM HOLDING",
+      "tip": "Hisse"
+    },
+    { "id": 7988, "kod": "YGGYO", "ad": "YENI GIMAT GMYO", "tip": "Hisse" },
+    { "id": 260, "kod": "YGYO", "ad": "YESIL GMYO", "tip": "Hisse" },
+    { "id": 112713, "kod": "YIGIT", "ad": "YIGIT AKU", "tip": "Hisse" },
+    { "id": 616, "kod": "YKBNK", "ad": "YAPI VE KREDI BANK.", "tip": "Hisse" },
+    { "id": 68648, "kod": "YKSLN", "ad": "YUKSELEN CELIK", "tip": "Hisse" },
+    { "id": 4031, "kod": "YONGA", "ad": "YONGA MOBILYA", "tip": "Hisse" },
+    { "id": 622, "kod": "YUNSA", "ad": "YUNSA", "tip": "Hisse" },
+    { "id": 84, "kod": "YYAPI", "ad": "YESIL YAPI", "tip": "Hisse" },
+    { "id": 81541, "kod": "YYLGD", "ad": "YAYLA GIDA", "tip": "Hisse" },
+    {
+      "id": 78727,
+      "kod": "Z30EA",
+      "ad": "ZIRAAT PORTFOY BIST30 EA ENDEKSI HSY BYF",
+      "tip": "Hisse"
+    },
+    {
+      "id": 73300,
+      "kod": "Z30KE",
+      "ad": "ZIRAAT PORTFOY KATILIM 30 EA HSY BYF",
+      "tip": "Hisse"
+    },
+    {
+      "id": 73299,
+      "kod": "Z30KP",
+      "ad": "ZIRAAT PORTFOY KATILIM 30 ENDEKSI HSY BYF",
+      "tip": "Hisse"
+    },
+    { "id": 85472, "kod": "ZEDUR", "ad": "ZEDUR ENERJI", "tip": "Hisse" },
+    {
+      "id": 76195,
+      "kod": "ZELOT",
+      "ad": "ZIRAAT PORTFOY BIST 50-30 HY BYF",
+      "tip": "Hisse"
+    },
+    {
+      "id": 70521,
+      "kod": "ZGOLD",
+      "ad": "ZIRAAT PORTFOY ALTIN BYF",
+      "tip": "Hisse"
+    },
+    {
+      "id": 70520,
+      "kod": "ZGOLDF",
+      "ad": "ZIRAAT PORTFOY ALTIN BYF",
+      "tip": "Hisse"
+    },
+    { "id": 635, "kod": "ZOREN", "ad": "ZORLU ENERJI", "tip": "Hisse" },
+    {
+      "id": 70524,
+      "kod": "ZPBDL",
+      "ad": "ZIRAAT PORTFOY BIST BANKA DISI LIKIT 10 HY BYF",
+      "tip": "Hisse"
+    },
+    {
+      "id": 70523,
+      "kod": "ZPLIB",
+      "ad": "ZIRAAT PORTFOY BIST LIKIT BANKA HY BYF",
+      "tip": "Hisse"
+    },
+    {
+      "id": 78730,
+      "kod": "ZPT10",
+      "ad": "ZIRAAT PORTFOY YP TEKNOLOJI ILETISIM 10 HY BYF",
+      "tip": "Hisse"
+    },
+    {
+      "id": 70522,
+      "kod": "ZPX30",
+      "ad": "ZIRAAT PORTFOY BIST 30 HY BYF",
+      "tip": "Hisse"
+    },
+    {
+      "id": 78729,
+      "kod": "ZRE20",
+      "ad": "ZIRAAT PORTFOY RISK ESIT BD20 ENDEKSI HSY BYF",
+      "tip": "Hisse"
+    },
+    { "id": 74480, "kod": "ZRGYO", "ad": "ZIRAAT GMYO", "tip": "Hisse" },
+    {
+      "id": 78728,
+      "kod": "ZTM15",
+      "ad": "ZIRAAT PORTFOY YP LIKIT TEMETTU ENDEKS HSY BYF",
+      "tip": "Hisse"
+    }
+  ]
+}

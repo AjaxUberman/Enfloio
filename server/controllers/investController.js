@@ -1,4 +1,5 @@
 const coinList = require("../json/coinnames.json");
+const bistList = require("../json/bistnames.json");
 const jwt = require("jsonwebtoken");
 const jwtSecret = process.env.JWT_SECRET;
 const Investment = require("../models/NewInvestment");
@@ -10,6 +11,10 @@ const cache = new NodeCache({ stdTTL: 300 });
 
 const coinListGetter = (req, res) => {
   res.json(coinList);
+};
+
+const bistListGetter = (req, res) => {
+  res.json(bistList);
 };
 
 const investmentSaver = (req, res) => {
@@ -30,9 +35,18 @@ const investmentSaver = (req, res) => {
   });
 };
 
+const investmentDeleter = async (req, res) => {
+  const { deleteID } = req.body;
+  try {
+    const response = await Investment.findByIdAndDelete(deleteID);
+    res.json(response);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
 const investmentGetter = (req, res) => {
   const { token } = req.cookies;
-
   const userid = req.params.id;
   jwt.verify(token, jwtSecret, {}, async (err, userData) => {
     if (err) throw err;
@@ -45,35 +59,43 @@ const investmentGetter = (req, res) => {
   });
 };
 
-const coinGetter = async (req, res) => {
-  const limit = pLimit(14);
+const coinGetter = (req, res) => {
   const coinId = req.params.id;
-  try {
-    const response = await limit(() =>
-      axios.get(`https://api.coingecko.com/api/v3/coins/${coinId}`)
-    );
-    const currentPrice = response.data.market_data.current_price.usd;
-    const updatedInvestment = await Investment.findOneAndUpdate(
-      { assetID: coinId },
-      { currentPrice: currentPrice },
-      { new: true }
-    );
-    cache.set(coinId, currentPrice);
-    if (updatedInvestment) {
-      res.json(currentPrice);
-    } else {
-      res.status(404).json({ error: "Investment not found" });
+
+  const fetchDataAndUpdate = async () => {
+    try {
+      const response = await axios.get(
+        `https://api.coingecko.com/api/v3/coins/${coinId}`,
+        {
+          params: {
+            _limit: 4,
+          },
+        }
+      );
+      const currentPrice = response.data.market_data.current_price.usd;
+      const updatedInvestment = await Investment.findOneAndUpdate(
+        { assetID: coinId },
+        { currentPrice: currentPrice },
+        { new: true }
+      );
+      cache.set(coinId, currentPrice);
+      if (updatedInvestment) {
+        console.log(` ${coinId}: ${currentPrice}`);
+      } else {
+        console.log(`Investment not found for coin ${coinId}`);
+      }
+    } catch (error) {
+      console.error(`Error fetching data for coin ${coinId}:`, error);
     }
-  } catch (error) {
-    console.error(`Error fetching data for coin`, error);
-    return null;
-  }
+  };
+  fetchDataAndUpdate();
+  const interval = setInterval(fetchDataAndUpdate, 15 * 60 * 1000);
 };
 
 const mainDataPost = (req, res) => {
   const { token } = req.cookies;
-
-  const { currentTotal, startingTotal, bistTotal, cryptoTotal } = req.body;
+  const { currentTotal, startingTotal, bistTotal, cryptoTotal, monhlyData } =
+    req.body;
   if (currentTotal) {
     jwt.verify(token, jwtSecret, {}, async (err, userData) => {
       if (err) throw err;
@@ -84,7 +106,6 @@ const mainDataPost = (req, res) => {
           existingData.startingTotal = startingTotal;
           existingData.bistTotal = bistTotal;
           existingData.cryptoTotal = cryptoTotal;
-          existingData.monthlyData = monthlyData;
           await existingData.save();
           res.json(existingData);
         } else {
@@ -126,9 +147,11 @@ const mainDataGet = (req, res) => {
 
 module.exports = {
   coinListGetter,
+  bistListGetter,
   investmentSaver,
   investmentGetter,
   coinGetter,
   mainDataPost,
   mainDataGet,
+  investmentDeleter,
 };

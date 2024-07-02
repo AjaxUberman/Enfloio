@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { UserContext } from "../../context/UserContext";
 import { toast, ToastContainer } from "react-toastify";
-import _ from "lodash";
 
 const MainInvestment = () => {
   const [datas, setDatas] = useState([]);
@@ -12,22 +11,25 @@ const MainInvestment = () => {
   const [currentTotal, setCurrentTotal] = useState("");
   const [startingTotal, setStartingTotal] = useState("");
   const [cryptoTotal, setCryptoTotal] = useState("");
-  const [bistTotal, setBistTotal] = useState("0");
+  const [bistTotal, setBistTotal] = useState("");
+
+  const fetchData = async () => {
+    if (loggedIn && !user) {
+      return toast.warning("You must login before use this page.");
+    }
+    if (loggedIn && user) {
+      const userID = user.id;
+      if (userID) {
+        const response = await axios.get(`/investments/${userID}`, {
+          withCredentials: true,
+        });
+        console.log(response.data);
+        setDatas(response.data);
+      }
+    }
+  };
 
   useEffect(() => {
-    const fetchData = async () => {
-      if (loggedIn && !user) {
-        return toast.warning("You must login before use this page.");
-      } else if (loggedIn && user) {
-        const userID = user.id;
-        if (userID) {
-          const response = await axios.get(`/investments/${userID}`, {
-            withCredentials: true,
-          });
-          setDatas(response.data);
-        }
-      }
-    };
     fetchData();
   }, [user]);
 
@@ -47,10 +49,19 @@ const MainInvestment = () => {
       const priceData = {};
       for (const data of datas) {
         try {
-          const response = await axios.get(
-            `/investments/coin/${data.assetID.toLowerCase()}`
-          );
-          priceData[data.assetID] = response.data;
+          if (data.assetType === "crypto") {
+            try {
+              const response = await axios.get(
+                `/investments/coin/${data.assetID.toLowerCase()}`
+              );
+              priceData[data.assetID] = response.data;
+            } catch (error) {
+              console.error("Error fetching data:", error);
+            }
+          }
+          if (data.assetType === "bist") {
+            priceData[data.assetID] = data.pieces * data.purchasePrice;
+          }
         } catch (error) {
           toast.error(`${error.message}`);
         }
@@ -71,17 +82,19 @@ const MainInvestment = () => {
     if (!datas) {
       return;
     }
-    const currentTotalCalculator = () => {
+    const currentTotalCalculator = async () => {
       let final = 0;
       let cryptoTotal = 0;
       let bistTotal = 0;
       for (const key in currentTotalPrice) {
-        const assetData = datas.find((data) => data.assetID === key);
+        const assetData = await datas.find((data) => data.assetID === key);
         if (assetData) {
           final += currentTotalPrice[key] * assetData.pieces;
         }
       }
-      const cryptoData = datas.filter((data) => data.assetType === "crypto");
+      const cryptoData = await datas.filter(
+        (data) => data.assetType === "crypto"
+      );
       if (cryptoData) {
         for (const i in cryptoData) {
           cryptoTotal += cryptoData[i].currentPrice * cryptoData[i].pieces;
@@ -90,7 +103,7 @@ const MainInvestment = () => {
       const bistData = datas.filter((data) => data.assetType === "bist");
       if (bistData) {
         for (const i in bistData) {
-          bistTotal += bistData[i].currentPrice * bistData[i].pieces;
+          bistTotal += bistData[i].purchasePrice * bistData[i].pieces;
         }
       }
 
@@ -131,13 +144,32 @@ const MainInvestment = () => {
     postData();
   }, [currentTotal, bistTotal, cryptoTotal]);
 
+  const deleteHandler = (deleteID) => {
+    const deleteData = async () => {
+      try {
+        const response = await axios.post(
+          "/investments/delete/" + deleteID,
+          { deleteID },
+          { withCredentials: true }
+        );
+        if ((response.status = 200)) {
+          toast("Delete succesfull.");
+          fetchData();
+        }
+      } catch (error) {
+        console.error("Delete failed");
+      }
+    };
+    deleteData();
+  };
+
   return (
     <div className="grid grid-cols-1 gap-4">
       <ToastContainer />
       {datas &&
         datas.map((data, index) => (
           <div
-            className="border rounded-xl shadow-md px-14 py-6 grid grid-cols-4 items-center"
+            className="border rounded-xl shadow-md px-14 py-6 grid grid-cols-4 items-center relative"
             key={index}
           >
             <div className="flex flex-col gap-2 col-span-1">
@@ -165,9 +197,9 @@ const MainInvestment = () => {
                     Current Total Price
                   </p>
                   <p className="font-semibold">
-                    {data
+                    {data.assetType === "crypto"
                       ? (data.currentPrice * data.pieces).toFixed(4) + "$"
-                      : ""}
+                      : (data.purchasePrice * data.pieces).toFixed(4) + "$"}
                   </p>
                 </div>
                 <div className="flex flex-col gap-1">
@@ -179,12 +211,12 @@ const MainInvestment = () => {
                         : "text-red-500"
                     } font-semibold `}
                   >
-                    {data
+                    {data.assetType === "crypto"
                       ? (
                           data.currentPrice * data.pieces -
                           data.purchasePrice * data.pieces
                         ).toFixed(4) + "$"
-                      : ""}
+                      : "No Api Data For Bist"}
                   </p>
                 </div>
               </div>
@@ -222,6 +254,12 @@ const MainInvestment = () => {
                     %
                   </p>
                 </div>
+                <button
+                  className="bg-red-500 py-1 px-3 rounded-xl shadow-md absolute right-4 bottom-4 text-white font-semibold hover:scale-105 hover:bg-red-600 hover:-translate-y-1 transition duration-200 ease-in"
+                  onClick={() => deleteHandler(data._id)}
+                >
+                  Delete
+                </button>
               </div>
             </div>
           </div>

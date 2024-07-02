@@ -16,6 +16,7 @@ const NewInvestment = ({ setNewInvestment }) => {
   const [assetSearcher, setAssetSearcher] = useState("");
   const [assetMenuActive, setAssetMenuActive] = useState(false);
   const [coinList, setCoinList] = useState([]);
+  const [bistData, setBistData] = useState([]);
   const [assetID, setAssetID] = useState("");
 
   const [purchasePrice, setPurchasePrice] = useState("");
@@ -93,10 +94,25 @@ const NewInvestment = ({ setNewInvestment }) => {
         },
         { withCredentials: true }
       );
+      console.log(assetType);
+
       toast("Amazing Investment! Good luck.");
       setNewInvestment(false);
+      window.location.reload();
     }
   };
+
+  console.log(assetType);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await axios.get("/investments/bist", {
+        withCredentials: true,
+      });
+      setBistData(response.data.data);
+    };
+    fetchData();
+  }, [assetType]);
 
   return (
     <div className="border py-10 flex flex-col w-96 gap-4 items-center justify-center bg-white rounded-xl shadow-md">
@@ -143,7 +159,8 @@ const NewInvestment = ({ setNewInvestment }) => {
               </button>
               {assetMenuActive && (
                 <div className="rounded-xl border z-10 flex flex-col shadow-md absolute top-0 translate-y-12 bg-white w-80 h-96 overflow-y-scroll scrollbar scrollbar-thumb-main-gray scrollbar-track-secondary-text">
-                  {coinList &&
+                  {assetType === "crypto" &&
+                    coinList &&
                     coinList
                       .filter((coin) =>
                         coin.name
@@ -169,6 +186,30 @@ const NewInvestment = ({ setNewInvestment }) => {
                             alt={coin.name}
                             className="w-10 h-10 rounded-xl"
                           />
+                        </button>
+                      ))}
+                  {assetType === "bist" &&
+                    bistData &&
+                    bistData
+                      .filter((coin) =>
+                        coin.kod
+                          .toLowerCase()
+                          .includes(assetSearcher.toLowerCase())
+                      )
+                      .map((coin, index) => (
+                        <button
+                          value={coin.kod}
+                          className={`hover:bg-orange-400 hover:text-white px-4 py-2  border-b flex items-center justify-between ${
+                            index === 0 ? "rounded-t-xl" : ""
+                          }`}
+                          onClick={(e) => assetSelectHandler(e, coin.ad)}
+                          key={index}
+                        >
+                          <p className="text-main-text">
+                            {coin.kod.length > 15
+                              ? coin.kod.slice(0, 15).concat("...")
+                              : coin.kod}
+                          </p>
                         </button>
                       ))}
                 </div>

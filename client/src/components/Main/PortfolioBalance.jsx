@@ -13,7 +13,7 @@ const PortfolioBalance = ({ setMainDatas }) => {
   const headerText = "Your Portfolio Balance is".split(" ");
 
   const [datas, setDatas] = useState([]);
-  const [loading, setLoading] = useState(true); // Başlangıçta yükleme durumunu true yap
+  const [loading, setLoading] = useState(true);
   const [monthlyData, setMonthlyData] = useState([0, 0, 0, 0]);
   const [cryptoPie, setCryptoPie] = useState("");
   const [bistPie, setBistPie] = useState("");
@@ -108,7 +108,7 @@ const PortfolioBalance = ({ setMainDatas }) => {
   return (
     <>
       <ToastContainer />
-      <div className="grid grid-cols-3 gap-10">
+      <div className="flex justify-between gap-10">
         {loading ? (
           <div className="col-span-3 flex justify-center items-center">
             <ClimbingBoxLoader />

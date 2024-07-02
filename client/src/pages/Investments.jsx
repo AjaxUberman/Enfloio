@@ -8,24 +8,23 @@ import { Navigate, useNavigate } from "react-router-dom";
 
 const Investments = () => {
   const [newInvestment, setNewInvestment] = useState(false);
-  const { user } = useContext(UserContext);
+  const { user, loggedIn } = useContext(UserContext);
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!user) {
+    if (!user && !loggedIn) {
       setTimeout(() => {
         navigate("/login");
       }, 3000);
     }
   }, [user]);
 
-  console.log(user);
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="py-32 px-40 flex flex-col gap-6 "
+      className="py-32 px-40  flex flex-col gap-6 "
     >
       <div className="flex justify-between">
         <h1 className="2xl:text-5xl text-4xl font-bold text-main-text">

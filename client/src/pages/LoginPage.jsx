@@ -4,11 +4,18 @@ import bglogin2 from "../photos/bg-login-2.jpg";
 import Register from "../components/loginPage/Register";
 import { motion } from "framer-motion";
 import { ToastContainer, toast } from "react-toastify";
+import { UserContext } from "../context/UserContext";
+import { useNavigate } from "react-router";
 
 const LoginPage = () => {
   const [activeMenu, setActiveMenu] = useState("login");
+  const { user } = useContext(UserContext);
+  const navigate = useNavigate();
 
-  
+  if (user) {
+    return navigate("/");
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 1 }}
