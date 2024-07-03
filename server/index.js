@@ -17,6 +17,7 @@ app.use(
       "http://localhost:3000",
       "https://localhost:3000",
       "https://jade-hummingbird-882ad1.netlify.app",
+      "http://jade-hummingbird-882ad1.netlify.app",
       "http://enfloio.com.tr",
       "http://enfloio.com.tr",
     ],
