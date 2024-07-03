@@ -22,6 +22,7 @@ app.use(
       "http://enfloio.com.tr",
     ],
     credentials: true,
+    methods: ["GET", "POST", "DELETE", "PUT"],
   })
 );
 mongoose.connect(process.env.MONGO_URL);
