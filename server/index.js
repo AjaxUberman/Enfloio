@@ -18,7 +18,7 @@ app.use(
       "https://localhost:3000",
       "https://jade-hummingbird-882ad1.netlify.app",
       "http://jade-hummingbird-882ad1.netlify.app",
-      "http://enfloio.com.tr",
+      "https://enfloio.com.tr",
       "http://enfloio.com.tr",
     ],
     credentials: true,
@@ -26,6 +26,11 @@ app.use(
   })
 );
 mongoose.connect(process.env.MONGO_URL);
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Credentials", "true");
+  next();
+});
 
 app.get("/test", (req, res) => {
   res.json("Server Working.");
