@@ -72,6 +72,7 @@ const coinGetter = (req, res) => {
           },
         }
       );
+      console.log(response.data);
       const currentPrice = response.data.market_data.current_price.usd;
       const updatedInvestment = await Investment.findOneAndUpdate(
         { assetID: coinId },
@@ -79,11 +80,6 @@ const coinGetter = (req, res) => {
         { new: true }
       );
       cache.set(coinId, currentPrice);
-      if (updatedInvestment) {
-        console.log(` ${coinId}: ${currentPrice}`);
-      } else {
-        console.log(`Investment not found for coin ${coinId}`);
-      }
     } catch (error) {
       console.error(`Error fetching data for coin ${coinId}:`, error);
     }

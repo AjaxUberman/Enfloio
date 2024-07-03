@@ -12,7 +12,7 @@ const Investments = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!user && !loggedIn) {
+    if (!user && loggedIn) {
       setTimeout(() => {
         navigate("/login");
       }, 3000);

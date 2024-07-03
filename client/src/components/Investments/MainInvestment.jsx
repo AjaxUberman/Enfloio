@@ -24,7 +24,6 @@ const MainInvestment = () => {
         const response = await axios.get(`/investments/${userID}`, {
           withCredentials: true,
         });
-        console.log(response.data);
         setDatas(response.data);
       }
     }
@@ -55,6 +54,8 @@ const MainInvestment = () => {
               const response = await axios.get(
                 `/investments/coin/${data.assetID.toLowerCase()}`
               );
+              console.log(response);
+
               priceData[data.assetID] = response.data;
             } catch (error) {
               console.error("Error fetching data:", error);
