@@ -15,7 +15,7 @@ const Main = () => {
       initial={{ opacity: 0, scale: 1 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="px-40 2xl:px-80 flex flex-col gap-10 py-40 overflow-x-hidden "
+      className="px-10 md:px-40 2xl:px-80 flex flex-col gap-10 md:py-40 py-20 overflow-x-hidden bg-white"
     >
       <PortfolioBalance setMainDatas={setMainDatas} />
       <PortfolioGraph mainDatas={mainDatas} />

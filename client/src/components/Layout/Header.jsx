@@ -28,14 +28,12 @@ const Header = () => {
         >
           Investments
         </Link>
-        <button>Resources</button>
         <Link
           to="/news"
           className="hover:text-orange-500 hover:-translate-y-1 transition duration-200 ease-in"
         >
           News
         </Link>
-        <button>Portfolio</button>
       </div>
 
       {user == undefined || user == null ? (

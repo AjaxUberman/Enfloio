@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { UserContext } from "../../context/UserContext";
 import { useNavigate } from "react-router";
+import { redirect } from "react-router-dom";
 
 const SignIn = ({ setActiveMenu }) => {
   const [email, setEmail] = useState("");
@@ -26,14 +27,14 @@ const SignIn = ({ setActiveMenu }) => {
         },
         { withCredentials: true }
       );
-      console.log(response.data);
       setUser(response.data);
       toast.success("Login successfull.");
-      navigate("/");
+      redirect("/");
     } catch (error) {
       console.log(error);
     }
   };
+
   return (
     <div>
       <ToastContainer position="bottom-right" />

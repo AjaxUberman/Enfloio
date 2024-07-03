@@ -82,7 +82,7 @@ const PortfolioGraph = ({ mainDatas }) => {
           Positive
         </p>
       </div>
-      <div className="w-2/3 h-96">
+      <div className="md:w-2/3 h-96 mt-10 md:mt-0">
         <Bar data={data} options={options} />
       </div>
     </div>

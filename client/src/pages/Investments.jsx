@@ -24,17 +24,17 @@ const Investments = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="py-32 px-40  flex flex-col gap-6 "
+      className="py-32 md:px-40 px-6 w-screen overflow-x-hidden flex flex-col gap-6 "
     >
       <div className="flex justify-between">
-        <h1 className="2xl:text-5xl text-4xl font-bold text-main-text">
+        <h1 className="2xl:text-5xl md:text-4xl text-2xl font-bold text-main-text">
           Your Investments
         </h1>
         <button
-          className="bg-orange-400 px-4 py-1 shadow-md rounded-xl text-white font-semibold flex gap-2 items-center hover:bg-orange-500 hover:scale-105 transition duration-100 ease-in"
+          className="bg-orange-400 md:px-4 px-1 py-1 shadow-md rounded-xl text-white font-semibold flex md:gap-2 items-center hover:bg-orange-500 hover:scale-105 transition duration-100 ease-in"
           onClick={() => setNewInvestment(!newInvestment)}
         >
-          <MdOutlineAttachMoney className="text-xl" />
+          <MdOutlineAttachMoney className="md:text-xl text-3xl" />
           <p>Add New Investment</p>
         </button>
       </div>

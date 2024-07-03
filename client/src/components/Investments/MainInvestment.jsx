@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { UserContext } from "../../context/UserContext";
 import { toast, ToastContainer } from "react-toastify";
+import Slider from "react-slick";
 
 const MainInvestment = () => {
   const [datas, setDatas] = useState([]);
@@ -163,23 +164,31 @@ const MainInvestment = () => {
     deleteData();
   };
 
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className="grid grid-cols-1 gap-4">
       <ToastContainer />
       {datas &&
         datas.map((data, index) => (
           <div
-            className="border rounded-xl shadow-md px-14 py-6 grid grid-cols-4 items-center relative"
+            className="border rounded-xl shadow-md md:px-14 px-4 py-6 grid md:grid-cols-4 items-center relative"
             key={index}
           >
-            <div className="flex flex-col gap-2 col-span-1">
+            <div className="flex md:flex-col md:gap-2 gap-6 items-center md:items-start mb-4 md:mb-0 col-span-1">
               <h1 className="capitalize font-bold text-xl text-main-gray">
                 {data.asset}
               </h1>
               <p className="text-secondary-text">{data.assetID}</p>
             </div>
-            <div className="flex flex-col gap-6 col-span-3 items-start text-lg">
-              <div className="flex gap-20">
+            <div className="flex flex-col md:gap-6 col-span-3 items-start text-lg">
+              <div className=" slider-container md:flex grid grid-cols-1 md:gap-20 gap-5 ">
                 <div className="flex flex-col gap-1">
                   <p className="text-secondary-text  underline">
                     Purchase Price
@@ -202,7 +211,7 @@ const MainInvestment = () => {
                       : (data.purchasePrice * data.pieces).toFixed(4) + "$"}
                   </p>
                 </div>
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 mb-5 md:mb-0">
                   <p className="text-secondary-text  underline">Profit</p>
                   <p
                     className={`${
@@ -220,7 +229,7 @@ const MainInvestment = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-20">
+              <div className="md:flex md:gap-20 grid grid-cols-2 gap-x-10 gap-y-5">
                 <div className="flex flex-col gap-1">
                   <p className="text-secondary-text underline">Purchase Date</p>
                   <p className="font-semibold">
@@ -233,7 +242,7 @@ const MainInvestment = () => {
                     {differenceInDays(data.startDate, currentDate)} Days
                   </p>
                 </div>
-                <div className="flex flex-col gap-1 translate-x-8">
+                <div className="flex flex-col gap-1 md:translate-x-8">
                   <p className="text-secondary-text underline">
                     Percent Change
                   </p>

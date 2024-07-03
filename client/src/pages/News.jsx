@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const News = () => {
   const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () =>
@@ -12,11 +14,16 @@ const News = () => {
           "https://finnhub.io/api/v1/news?category=general&token=cpum5j1r01qhicnal2q0cpum5j1r01qhicnal2qg"
         )
         .then((res) => setNews(res.data));
+    setLoading(false);
     fetchData();
   }, []);
 
+  if (loading) {
+    return <ClipLoader />;
+  }
+
   return (
-    <div className="flex flex-col gap-10 h-full  justify-center items-center py-32 px-40">
+    <div className="flex flex-col gap-10 h-full  justify-center items-center py-32 md:px-40">
       <h1 className="text-5xl uppercase font-bold text-orange-400">News</h1>
       {news &&
         news.slice(0, 20).map((item, index) => (
@@ -37,7 +44,7 @@ const News = () => {
           >
             <img
               src={item.image}
-              className="p-2 rounded-xl shadow-xl object-cover col-span-1"
+              className="p-2 rounded-xl shadow-xl object-cover col-span-1 h-full "
               alt="News"
             />
             <div className=" flex flex-col gap-2 text-main-text col-span-3 p-4">

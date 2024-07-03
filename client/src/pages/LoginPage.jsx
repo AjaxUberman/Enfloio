@@ -21,10 +21,10 @@ const LoginPage = () => {
       initial={{ opacity: 0, scale: 1 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className={`grid grid-cols-3 h-screen px-20 2xl:px-52 items-center bg-cover  `}
+      className={`grid md:grid-cols-3 h-screen md:px-20 px-6 2xl:px-52 md:items-center py-40 md:py-0 bg-cover  `}
       style={{ backgroundImage: `url(${bglogin2})` }}
     >
-      <div className="col-span-2 flex flex-col gap-4 pl-40  justify-center text-background-gray">
+      <div className="hidden md:flex flex-col col-span-2 gap-4 pl-40  justify-center text-background-gray">
         <h1 className="font-bold text-5xl 2xl:text-7xl drop-shadow-2xl font-header-poppins ">
           Welcome back...
         </h1>

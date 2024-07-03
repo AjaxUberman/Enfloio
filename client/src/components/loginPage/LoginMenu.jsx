@@ -1,19 +1,22 @@
 import React, { useContext } from "react";
 import { UserContext } from "../../context/UserContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const LoginMenu = () => {
   const { setUser } = useContext(UserContext);
+  const navigate = useNavigate();
   const logoutHandler = async (e) => {
     e.preventDefault();
     try {
       await axios.post("/account/logout", {}, { withCredentials: true });
       setUser(false);
+      navigate("/login");
     } catch (error) {
       console.log(error);
     }
   };
+
   return (
     <div className="bg-white rounded-xl shadow-md border ">
       <div className="flex flex-col">

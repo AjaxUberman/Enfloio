@@ -6,8 +6,10 @@ import ClimbingBoxLoader from "react-spinners/ClipLoader";
 import { Pie } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { useNavigate } from "react-router-dom";
-import { UserContext } from "../../context/UserContext";
 import { toast, ToastContainer } from "react-toastify";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const PortfolioBalance = ({ setMainDatas }) => {
   const headerText = "Your Portfolio Balance is".split(" ");
@@ -105,8 +107,16 @@ const PortfolioBalance = ({ setMainDatas }) => {
     ],
   };
 
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
+
   return (
-    <>
+    <div>
       <ToastContainer />
       <div className="flex justify-between gap-10">
         {loading ? (
@@ -124,10 +134,10 @@ const PortfolioBalance = ({ setMainDatas }) => {
               className="col-span-2 flex flex-col gap-10 items-start"
             >
               <div className="flex flex-col gap-3">
-                <div className="flex gap-4">
+                <div className="flex md:gap-4 gap-2">
                   {headerText.map((el, i) => (
                     <motion.span
-                      className="2xl:text-5xl text-4xl font-bold text-main-text"
+                      className="2xl:text-5xl md:text-4xl text-2xl font-bold text-main-text"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{
@@ -146,7 +156,7 @@ const PortfolioBalance = ({ setMainDatas }) => {
                   transition={{
                     duration: 2,
                   }}
-                  className="flex gap-4 items-baseline"
+                  className="md:flex-row flex flex-col gap-4 items-baseline"
                 >
                   <div className="flex gap-1 items-baseline text-money-blue text-4xl font-bold">
                     <p>$</p>
@@ -173,8 +183,8 @@ const PortfolioBalance = ({ setMainDatas }) => {
                   </motion.span>
                 </motion.div>
               </div>
-              <div className="flex gap-8">
-                <div className="flex flex-col border-r pr-10">
+              <div className="slider-container md:flex grid grid-cols-2 gap-4 whitespace-nowrap ">
+                <div className="flex flex-col border-r pr-6 2xl:pr-10">
                   <h1 className="text-secondary-text uppercase">
                     Crypto Value
                   </h1>
@@ -182,7 +192,7 @@ const PortfolioBalance = ({ setMainDatas }) => {
                     ${data.cryptoTotal}
                   </p>
                 </div>
-                <div className="flex flex-col border-r pr-10">
+                <div className="flex flex-col md:border-r pr-6 2xl:pr-10">
                   <h1 className="text-secondary-text uppercase">Bist Value</h1>
                   <p className="text-main-text font-semibold text-2xl">
                     ${data.bistTotal}
@@ -200,11 +210,12 @@ const PortfolioBalance = ({ setMainDatas }) => {
             </div>
           ))
         )}
-        <div className={`h-56 ${datas.length < 1 ? "hidden" : ""}`}>
+
+        <div className={`h-56 ${datas.length < 0 ? "hidden" : ""}`}>
           <Pie data={pieData} />
         </div>
-      </div>{" "}
-    </>
+      </div>
+    </div>
   );
 };
 
