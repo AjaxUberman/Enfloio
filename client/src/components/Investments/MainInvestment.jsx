@@ -4,7 +4,7 @@ import { UserContext } from "../../context/UserContext";
 import { toast, ToastContainer } from "react-toastify";
 import Slider from "react-slick";
 
-const MainInvestment = () => {
+const MainInvestment = ({ newInvestment }) => {
   const [datas, setDatas] = useState([]);
   const { user, loggedIn } = useContext(UserContext);
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -31,7 +31,7 @@ const MainInvestment = () => {
 
   useEffect(() => {
     fetchData();
-  }, [user]);
+  }, [newInvestment]);
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
@@ -49,12 +49,11 @@ const MainInvestment = () => {
       const priceData = {};
       for (const data of datas) {
         try {
-          if (data.assetType === "crypto") {
+          if (data.assetType === "crypto" && !data.currentPrice) {
             try {
               const response = await axios.get(
                 `/investments/coin/${data.assetID.toLowerCase()}`
               );
-              console.log(response);
 
               priceData[data.assetID] = response.data;
             } catch (error) {
@@ -74,7 +73,7 @@ const MainInvestment = () => {
     if (datas.length > 0 && loggedIn) {
       fetchPrices();
     }
-  }, [datas]);
+  }, [datas, newInvestment]);
 
   const priceChangePercentage = (price1, price2) => {
     return (((price2 - price1) / price1) * 100).toFixed(2);

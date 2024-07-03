@@ -61,7 +61,6 @@ const investmentGetter = (req, res) => {
 
 const coinGetter = (req, res) => {
   const coinId = req.params.id;
-
   const fetchDataAndUpdate = async () => {
     try {
       const response = await axios.get(
@@ -72,7 +71,6 @@ const coinGetter = (req, res) => {
           },
         }
       );
-      console.log(response.data);
       const currentPrice = response.data.market_data.current_price.usd;
       const updatedInvestment = await Investment.findOneAndUpdate(
         { assetID: coinId },

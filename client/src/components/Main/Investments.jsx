@@ -38,8 +38,6 @@ const Investments = () => {
     }
   }, [user]);
 
-  console.log(user);
-
   const priceChangePercentage = (price1, price2) => {
     return (((price2 - price1) / price1) * 100).toFixed(2);
   };

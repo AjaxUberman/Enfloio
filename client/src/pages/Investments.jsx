@@ -48,7 +48,7 @@ const Investments = () => {
           <NewInvestment setNewInvestment={setNewInvestment} />
         </motion.div>
       )}
-      <MainInvestment />
+      <MainInvestment newInvestment={newInvestment} />
     </motion.div>
   );
 };

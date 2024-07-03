@@ -94,15 +94,10 @@ const NewInvestment = ({ setNewInvestment }) => {
         },
         { withCredentials: true }
       );
-      console.log(assetType);
-
       toast("Amazing Investment! Good luck.");
       setNewInvestment(false);
-      window.location.reload();
     }
   };
-
-  console.log(assetType);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -117,6 +112,11 @@ const NewInvestment = ({ setNewInvestment }) => {
   return (
     <div className="border py-10 flex flex-col w-96 gap-4 items-center justify-center bg-white rounded-xl shadow-md">
       <ToastContainer />
+      {assetType === "bist" ? (
+        <p className="text-red-400">No Current Price Data for Bist</p>
+      ) : (
+        ""
+      )}
       <h1 className="font-semibold text-xl">Add New</h1>
       <form onSubmit={saveHandler}>
         <div className="flex flex-col gap-2">
