@@ -94,6 +94,7 @@ const NewInvestment = ({ setNewInvestment }) => {
         { withCredentials: true }
       );
       setNewInvestment(false);
+      window.location.reload();
     }
   };
 
