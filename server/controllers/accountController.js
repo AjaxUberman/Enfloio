@@ -1,33 +1,15 @@
 const User = require("../models/User");
 const Main = require("../models/MainDatas");
 const express = require("express");
-const app = express();
 const bcrypt = require("bcryptjs");
-const cookieParser = require("cookie-parser");
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv").config();
-const cors = require("cors");
 const fs = require("fs");
 const multer = require("multer");
-const upload = multer({ dest: "uploads/" });
 const path = require("path");
 
 app.use(express.json());
-app.use(cookieParser());
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "https://localhost:3000",
-      "https://jade-hummingbird-882ad1.netlify.app",
-      "http://jade-hummingbird-882ad1.netlify.app",
-      "https://enfloio.com.tr",
-      "http://enfloio.com.tr",
-    ],
-    credentials: true,
-    methods: ["GET", "POST", "DELETE", "PUT"],
-  })
-);
+
 const bcryptSalt = bcrypt.genSaltSync(10);
 const jwtSecret = process.env.JWT_SECRET;
 
@@ -65,7 +47,13 @@ const loginController = async (req, res) => {
             if (error) {
               throw error;
             } else {
-              res.cookie("token", token).json(userDoc);
+              res
+                .cookie("token", token, {
+                  httpOnly: true,
+                  secure: true,
+                  sameSite: false,
+                })
+                .json(userDoc);
             }
           }
         );
