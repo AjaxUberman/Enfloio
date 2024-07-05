@@ -20,7 +20,11 @@ const Header = () => {
     >
       <div className="flex gap-8 items-center justify-center font-semibold">
         <Link to={"/"}>
-          <img src={mainLogo} className="h-20 w-20 -translate-y-1" />
+          <img
+            alt="mainLogo"
+            src={mainLogo}
+            className="h-20 w-20 -translate-y-1"
+          />
         </Link>
         <Link
           to={"/investments"}

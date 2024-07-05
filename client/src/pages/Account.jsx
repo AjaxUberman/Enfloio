@@ -4,6 +4,7 @@ import axios from "axios";
 import { UserContext } from "../context/UserContext";
 import { useNavigate } from "react-router";
 import { FaCloudUploadAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Account = () => {
   const [newsPreference, setNewsPreference] = useState("Crypto");
@@ -76,6 +77,7 @@ const Account = () => {
           <div className="flex gap-4">
             <label className="border bg-transparent rounded-2xl px-6 py-3 text-xl flex items-center justify-center gap-4 cursor-pointer text-main-gray w-full">
               <img
+                alt="userPhoto"
                 src={`${
                   photo
                     ? `${process.env.REACT_APP_API_URL}/uploads/${photo}`
@@ -101,7 +103,7 @@ const Account = () => {
               className="border rounded-md shadow-md pl-3 py-2 focus:outline-none focus:border-main-gray"
             />
             <input
-              placeholder="Prefered Exchange"
+              placeholder="Starting Balance"
               value={exchange}
               onChange={(e) => setExchange(e.target.value)}
               className="border rounded-md shadow-md pl-3 py-2 focus:outline-none focus:border-main-gray"
@@ -134,9 +136,12 @@ const Account = () => {
               <button className="px-4 py-2 bg-second-gray text-white rounded-md shadow-md hover:scale-105 transition duration-100 ease-in hover:bg-focus-blue">
                 Reset
               </button>
-              <button className="bg-orange-400 px-4 py-2 text-main-gray rounded-md shadow-md hover:scale-105 transition duration-100 ease-in hover:bg-focus-blue hover:text-white">
+              <Link
+                to="/investments"
+                className="bg-orange-400 px-4 py-2 text-main-gray rounded-md shadow-md hover:scale-105 transition duration-100 ease-in hover:bg-focus-blue hover:text-white"
+              >
                 Save
-              </button>
+              </Link>
             </div>
           </div>
         </form>

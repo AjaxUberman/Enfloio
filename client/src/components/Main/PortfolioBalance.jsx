@@ -1,15 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import axios from "axios";
 import ClimbingBoxLoader from "react-spinners/ClipLoader";
 import { Pie } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import { useNavigate } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
+import { Link, useNavigate } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 const PortfolioBalance = ({ setMainDatas }) => {
   const headerText = "Your Portfolio Balance is".split(" ");
@@ -106,15 +105,6 @@ const PortfolioBalance = ({ setMainDatas }) => {
       },
     ],
   };
-
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-  };
-
   return (
     <div>
       <ToastContainer />
@@ -189,13 +179,13 @@ const PortfolioBalance = ({ setMainDatas }) => {
                     Crypto Value
                   </h1>
                   <p className="text-main-text font-semibold text-2xl">
-                    ${data.cryptoTotal}
+                    ${Number(data.cryptoTotal).toFixed()}
                   </p>
                 </div>
                 <div className="flex flex-col md:border-r pr-6 2xl:pr-10">
                   <h1 className="text-secondary-text uppercase">Bist Value</h1>
                   <p className="text-main-text font-semibold text-2xl">
-                    ${data.bistTotal}
+                    ${Number(data.bistTotal).toFixed()}
                   </p>
                 </div>
                 <div className="flex flex-col">
@@ -203,7 +193,16 @@ const PortfolioBalance = ({ setMainDatas }) => {
                     Starting Balance
                   </h1>
                   <p className="text-main-text font-semibold text-2xl">
-                    ${data.startingTotal}
+                    {data.startingTotal === undefined ? (
+                      <Link
+                        to="/account"
+                        className="px-4  bg-orange-400 text-white font-semibold shadow-md rounded-xl"
+                      >
+                        Set Your Balance
+                      </Link>
+                    ) : (
+                      data.startingTotal
+                    )}
                   </p>
                 </div>
               </div>

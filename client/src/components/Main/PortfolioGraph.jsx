@@ -43,7 +43,7 @@ const PortfolioGraph = ({ mainDatas }) => {
       const insideData = [];
       for (const data of monthlyDataRequired) {
         if (!data.income) {
-          insideData.push(0);
+          insideData.push(mainDatas[0].startingTotal);
         } else {
           insideData.push(data.income);
         }
@@ -56,8 +56,8 @@ const PortfolioGraph = ({ mainDatas }) => {
     return <h1 className="text-4xl font-bold">Returning to login Page...</h1>;
   }
 
-  const backgroundColors = dataPoints.map((value) =>
-    value > 0 ? "green" : "red"
+  const backgroundColors = dataPoints.map((value, index, array) =>
+    index > 0 && value > array[index - 1] ? "red" : "green"
   );
 
   const data = {
@@ -66,13 +66,21 @@ const PortfolioGraph = ({ mainDatas }) => {
       {
         label: "Positive",
         fill: true,
-        backgroundColor: "green",
+        backgroundColor: backgroundColors,
         data: dataPoints,
       },
     ],
   };
 
-  const options = { maintainAspectRatio: false, aspectRatio: 1 };
+  const options = {
+    maintainAspectRatio: false,
+    aspectRatio: 1,
+    scales: {
+      /*   y: {
+        suggestedMin: Number(mainDatas[0].startingTotal),
+      }, */
+    },
+  };
 
   return (
     <div className="">

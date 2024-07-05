@@ -3,7 +3,6 @@ import SignIn from "../components/loginPage/SignIn";
 import bglogin2 from "../photos/bg-login-2.jpg";
 import Register from "../components/loginPage/Register";
 import { motion } from "framer-motion";
-import { ToastContainer, toast } from "react-toastify";
 import { UserContext } from "../context/UserContext";
 import { useNavigate } from "react-router";
 
@@ -12,9 +11,11 @@ const LoginPage = () => {
   const { user } = useContext(UserContext);
   const navigate = useNavigate();
 
-  if (user) {
-    return navigate("/");
-  }
+  useEffect(() => {
+    if (user) {
+      return navigate("/");
+    }
+  }, [user]);
 
   return (
     <motion.div

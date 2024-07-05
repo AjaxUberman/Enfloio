@@ -7,6 +7,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { UserContext } from "../../context/UserContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router";
 
 const NewInvestment = ({ setNewInvestment }) => {
   const [assetType, setAssetType] = useState("Select Asset Type");
@@ -18,7 +19,6 @@ const NewInvestment = ({ setNewInvestment }) => {
   const [coinList, setCoinList] = useState([]);
   const [bistData, setBistData] = useState([]);
   const [assetID, setAssetID] = useState("");
-
   const [purchasePrice, setPurchasePrice] = useState("");
   const [pieces, setPieces] = useState("");
   const [startDate, setStartDate] = useState(new Date());
@@ -94,7 +94,6 @@ const NewInvestment = ({ setNewInvestment }) => {
         },
         { withCredentials: true }
       );
-      toast("Amazing Investment! Good luck.");
       setNewInvestment(false);
     }
   };

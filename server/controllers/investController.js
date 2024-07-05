@@ -66,6 +66,9 @@ const coinGetter = (req, res) => {
       const response = await axios.get(
         `https://api.coingecko.com/api/v3/coins/${coinId}`,
         {
+          withCredentials: true,
+        },
+        {
           params: {
             _limit: 4,
           },
@@ -88,7 +91,7 @@ const coinGetter = (req, res) => {
 
 const mainDataPost = (req, res) => {
   const { token } = req.cookies;
-  const { currentTotal, startingTotal, bistTotal, cryptoTotal, monhlyData } =
+  const { currentTotal, startingTotal, bistTotal, cryptoTotal, monthlyData } =
     req.body;
   if (currentTotal) {
     jwt.verify(token, jwtSecret, {}, async (err, userData) => {

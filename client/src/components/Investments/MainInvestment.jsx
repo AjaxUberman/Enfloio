@@ -2,36 +2,61 @@ import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { UserContext } from "../../context/UserContext";
 import { toast, ToastContainer } from "react-toastify";
-import Slider from "react-slick";
+import { useNavigate } from "react-router-dom";
 
 const MainInvestment = ({ newInvestment }) => {
   const [datas, setDatas] = useState([]);
   const { user, loggedIn } = useContext(UserContext);
   const [currentDate, setCurrentDate] = useState(new Date());
-  const [currentTotalPrice, setCurrentTotalPrice] = useState([]);
+  const [currentTotalPrice, setCurrentTotalPrice] = useState({});
   const [currentTotal, setCurrentTotal] = useState("");
   const [startingTotal, setStartingTotal] = useState("");
   const [cryptoTotal, setCryptoTotal] = useState("");
   const [bistTotal, setBistTotal] = useState("");
+  const [prevCurrent, setPrevCurrent] = useState("");
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const fetchData = async () => {
     if (loggedIn && !user) {
       return toast.warning("You must login before use this page.");
     }
     if (loggedIn && user) {
+      setLoading(true);
       const userID = user.id;
       if (userID) {
-        const response = await axios.get(`/investments/${userID}`, {
-          withCredentials: true,
-        });
-        setDatas(response.data);
+        try {
+          const response = await axios.get(`/investments/${userID}`, {
+            withCredentials: true,
+          });
+          setDatas(response.data);
+        } catch (error) {
+          toast.error("Error fetching data");
+        } finally {
+          setLoading(false);
+        }
       }
     }
   };
 
   useEffect(() => {
-    fetchData();
-  }, [newInvestment]);
+    const checkLoadingStatus = () => {
+      if (
+        datas.some((data) => data.assetType === "crypto" && !data.currentPrice)
+      ) {
+        setLoading(true);
+      } else {
+        setLoading(false);
+      }
+    };
+    checkLoadingStatus();
+  }, [datas, user]);
+
+  useEffect(() => {
+    if (loggedIn && user) {
+      fetchData();
+    }
+  }, [newInvestment, loggedIn, user, loading]);
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
@@ -45,6 +70,17 @@ const MainInvestment = ({ newInvestment }) => {
   };
 
   useEffect(() => {
+    const fetchData = async () => {
+      const { data } = await axios.get("/account/profile", {
+        withCredentials: true,
+      });
+      if (!data) return;
+      setStartingTotal(data.exchange);
+    };
+    fetchData();
+  }, [user]);
+
+  useEffect(() => {
     const fetchPrices = async () => {
       const priceData = {};
       for (const data of datas) {
@@ -52,9 +88,11 @@ const MainInvestment = ({ newInvestment }) => {
           if (data.assetType === "crypto" && !data.currentPrice) {
             try {
               const response = await axios.get(
-                `/investments/coin/${data.assetID.toLowerCase()}`
+                `/investments/coin/${data.assetID.toLowerCase()}`,
+                {
+                  withCredentials: true,
+                }
               );
-
               priceData[data.assetID] = response.data;
             } catch (error) {
               console.error("Error fetching data:", error);
@@ -69,11 +107,10 @@ const MainInvestment = ({ newInvestment }) => {
       }
       setCurrentTotalPrice(priceData);
     };
-
-    if (datas.length > 0 && loggedIn) {
+    if (loggedIn) {
       fetchPrices();
     }
-  }, [datas, newInvestment]);
+  }, [datas, user, loggedIn, newInvestment]);
 
   const priceChangePercentage = (price1, price2) => {
     return (((price2 - price1) / price1) * 100).toFixed(2);
@@ -84,15 +121,9 @@ const MainInvestment = ({ newInvestment }) => {
       return;
     }
     const currentTotalCalculator = async () => {
-      let final = 0;
       let cryptoTotal = 0;
       let bistTotal = 0;
-      for (const key in currentTotalPrice) {
-        const assetData = await datas.find((data) => data.assetID === key);
-        if (assetData) {
-          final += currentTotalPrice[key] * assetData.pieces;
-        }
-      }
+
       const cryptoData = await datas.filter(
         (data) => data.assetType === "crypto"
       );
@@ -107,30 +138,21 @@ const MainInvestment = ({ newInvestment }) => {
           bistTotal += bistData[i].purchasePrice * bistData[i].pieces;
         }
       }
-
-      setCurrentTotal(final.toFixed(4));
+      setCurrentTotal((Number(cryptoTotal) + Number(bistTotal)).toFixed());
       setCryptoTotal(cryptoTotal.toFixed(4));
       setBistTotal(bistTotal.toFixed(4));
     };
     currentTotalCalculator();
-    const startingTotalCalculator = () => {
-      let final = 0;
-      for (const data in datas) {
-        final += datas[data].pieces * datas[data].purchasePrice;
-      }
-      setStartingTotal(final);
-    };
-    startingTotalCalculator();
   }, [datas, currentTotalPrice]);
 
   useEffect(() => {
     const postData = async () => {
-      if (currentTotal > 0) {
+      if (currentTotal) {
         try {
           await axios.post(
             "/investments",
             {
-              currentTotal,
+              currentTotal: Number(prevCurrent) + Number(currentTotal),
               startingTotal,
               bistTotal,
               cryptoTotal,
@@ -143,7 +165,27 @@ const MainInvestment = ({ newInvestment }) => {
       }
     };
     postData();
-  }, [currentTotal, bistTotal, cryptoTotal]);
+  }, [currentTotal, bistTotal, cryptoTotal, startingTotal, prevCurrent]);
+
+  useEffect(() => {
+    const getData = async () => {
+      if (user) {
+        try {
+          const response = await axios.get("/investments", {
+            withCredentials: true,
+          });
+          if (response.data) {
+            setPrevCurrent(response.data[0].currentTotal);
+          } else {
+            console.error("Invalid response format:", response.data);
+          }
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      }
+    };
+    getData();
+  }, [user]);
 
   const deleteHandler = (deleteID) => {
     const deleteData = async () => {
@@ -162,14 +204,6 @@ const MainInvestment = ({ newInvestment }) => {
       }
     };
     deleteData();
-  };
-
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
   };
 
   return (
@@ -207,8 +241,10 @@ const MainInvestment = ({ newInvestment }) => {
                   </p>
                   <p className="font-semibold">
                     {data.assetType === "crypto"
-                      ? (data.currentPrice * data.pieces).toFixed(4) + "$"
-                      : (data.purchasePrice * data.pieces).toFixed(4) + "$"}
+                      ? data.currentPrice
+                        ? (data.currentPrice * data.pieces).toFixed(2) + "$"
+                        : "Loading..."
+                      : (data.purchasePrice * data.pieces).toFixed(2) + "$"}
                   </p>
                 </div>
                 <div className="flex flex-col gap-1 mb-5 md:mb-0">
@@ -221,11 +257,13 @@ const MainInvestment = ({ newInvestment }) => {
                     } font-semibold `}
                   >
                     {data.assetType === "crypto"
-                      ? (
-                          data.currentPrice * data.pieces -
-                          data.purchasePrice * data.pieces
-                        ).toFixed(4) + "$"
-                      : "No Api Data For Bist"}
+                      ? data.currentPrice
+                        ? (
+                            data.currentPrice * data.pieces -
+                            data.purchasePrice * data.pieces
+                          ).toFixed(2) + "$"
+                        : "Loading..."
+                      : "No API Data For Bist"}
                   </p>
                 </div>
               </div>
