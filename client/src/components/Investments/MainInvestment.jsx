@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { UserContext } from "../../context/UserContext";
 import { toast, ToastContainer } from "react-toastify";
-import { useNavigate } from "react-router-dom";
 
 const MainInvestment = ({ newInvestment }) => {
   const [datas, setDatas] = useState([]);
@@ -15,7 +14,6 @@ const MainInvestment = ({ newInvestment }) => {
   const [bistTotal, setBistTotal] = useState("");
   const [prevCurrent, setPrevCurrent] = useState("");
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
 
   const fetchData = async () => {
     if (loggedIn && !user) {

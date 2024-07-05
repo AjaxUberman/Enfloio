@@ -30,7 +30,7 @@ const Header = () => {
             >
               <CiMenuBurger />
             </button>
-            {user == undefined || user == null ? (
+            {user === undefined || user === null ? (
               <div className="">
                 <Link
                   to="/login"
@@ -71,7 +71,11 @@ const Header = () => {
             <IoCloseSharp />
           </button>
           <Link to={"/"} onClick={() => setMobileMenuActive(false)}>
-            <img src={mainLogo} className="h-20 w-20 -translate-y-1" />
+            <img
+              alt="mainLogo"
+              src={mainLogo}
+              className="h-20 w-20 -translate-y-1"
+            />
           </Link>
           <Link
             to={"/investments"}

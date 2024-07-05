@@ -40,7 +40,7 @@ const Header = () => {
         </Link>
       </div>
 
-      {user == undefined || user == null ? (
+      {user === undefined || user === null ? (
         <div className="">
           <Link
             to="/login"
