@@ -16,8 +16,16 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://localhost:3000"],
+    origin: [
+      "http://localhost:3000",
+      "https://localhost:3000",
+      "https://jade-hummingbird-882ad1.netlify.app",
+      "http://jade-hummingbird-882ad1.netlify.app",
+      "https://enfloio.com.tr",
+      "http://enfloio.com.tr",
+    ],
     credentials: true,
+    methods: ["GET", "POST", "DELETE", "PUT"],
   })
 );
 const bcryptSalt = bcrypt.genSaltSync(10);
