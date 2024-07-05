@@ -8,8 +8,6 @@ const fs = require("fs");
 const multer = require("multer");
 const path = require("path");
 
-app.use(express.json());
-
 const bcryptSalt = bcrypt.genSaltSync(10);
 const jwtSecret = process.env.JWT_SECRET;
 
