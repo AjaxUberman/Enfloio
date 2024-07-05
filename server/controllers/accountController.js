@@ -51,7 +51,7 @@ const loginController = async (req, res) => {
                 .cookie("token", token, {
                   httpOnly: true,
                   secure: true,
-                  sameSite: false,
+                  sameSite: none,
                 })
                 .json(userDoc);
             }
